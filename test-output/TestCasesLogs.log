@@ -1,0 +1,388 @@
+24-Apr-2018 16:27:12:414 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:27:12:423 INFO  [TestNG-PoolService-0] ****             Logo is clickable[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:27:12:424 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:27:12:414 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:27:12:432 INFO  [TestNG-PoolService-0] ****             Top stories playback- with pre roll[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:27:12:433 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:27:13:521 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:27:13:521 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:13:548 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:27:13:549 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:22:747 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:27:22:748 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:24:435 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:27:24:438 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:26:200 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (8842e6b589f94c44a9b1474fb594d6c9)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:27:27:343 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:27:27:348 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:27:766 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (577274ae65484e1f8147d5dab645869d)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:27:28:597 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:27:28:598 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:28:954 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:27:28:955 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:30:054 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:27:30:055 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:30:879 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (8842e6b589f94c44a9b1474fb594d6c9)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:27:30:880 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:27:32:214 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (8842e6b589f94c44a9b1474fb594d6c9)] -> css selector: div[class='top-stories'] div[class='story'] div[class='headline'] a div[class='headline-tag']] 
+24-Apr-2018 16:27:32:349 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (577274ae65484e1f8147d5dab645869d)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:27:32:350 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:27:33:871 DEBUG [TestNG-PoolService-0] Validating Brand Logo... 
+24-Apr-2018 16:27:37:186 INFO  [TestNG-PoolService-0] Validation 1: Branding Logo available as expected! 
+24-Apr-2018 16:27:38:187 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:27:38:193 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:43:199 DEBUG [TestNG-PoolService-0] Clicked first article with Video on Top Section 
+24-Apr-2018 16:27:44:237 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/choke-hold-robber-nyc-bronx-morrisania-man-walker--480648121.html 
+24-Apr-2018 16:27:44:238 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:44:403 DEBUG [TestNG-PoolService-0] Clicked on News link.. 
+24-Apr-2018 16:27:44:404 INFO  [TestNG-PoolService-0] Step 2. Navigated to 'News' Page! 
+24-Apr-2018 16:27:45:521 DEBUG [TestNG-PoolService-0] Validating Brand Logo... 
+24-Apr-2018 16:27:46:544 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (8842e6b589f94c44a9b1474fb594d6c9)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:27:47:558 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/choke-hold-robber-nyc-bronx-morrisania-man-walker--480648121.html 
+24-Apr-2018 16:27:47:558 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:47:662 INFO  [TestNG-PoolService-0] Validation 2: Branding Logo available as expected! 
+24-Apr-2018 16:27:48:535 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/choke-hold-robber-nyc-bronx-morrisania-man-walker--480648121.html 
+24-Apr-2018 16:27:48:536 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:27:49:643 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (577274ae65484e1f8147d5dab645869d)] -> css selector: div[class='brand'] a[data-lid='logo'] img] 
+24-Apr-2018 16:27:50:723 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (8842e6b589f94c44a9b1474fb594d6c9)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:27:50:724 INFO  [TestNG-PoolService-0] Step 2. Navigated to First Article with Video on Top Section! 
+24-Apr-2018 16:27:52:832 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (8842e6b589f94c44a9b1474fb594d6c9)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:27:53:443 DEBUG [TestNG-PoolService-0] Validating Article Video Player... 
+24-Apr-2018 16:27:55:725 DEBUG [TestNG-PoolService-0] Clicked on Home link.. 
+24-Apr-2018 16:27:55:726 INFO  [TestNG-PoolService-0] Step 3. Clicked on Brand Logo! 
+24-Apr-2018 16:27:55:863 ERROR [TestNG-PoolService-0] Article Video Player failed to load 
+24-Apr-2018 16:27:55:865 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:27:56:707 DEBUG [TestNG-PoolService-0] Validating Home Page... 
+24-Apr-2018 16:27:59:318 INFO  [TestNG-PoolService-0] Validation 3: Navigated to Home Page as expected! 
+24-Apr-2018 16:28:00:663 DEBUG [TestNG-PoolService-0] Validating Brand Logo... 
+24-Apr-2018 16:28:02:426 INFO  [TestNG-PoolService-0] Validation 4: Branding Logo available as expected! 
+24-Apr-2018 16:28:04:272 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:28:04:273 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:28:04:277 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:28:04:934 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:28:04:962 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:28:04:963 INFO  [TestNG-PoolService-0] ****             Weather module appears on HP and map loads[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:28:04:965 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:28:05:850 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:28:05:851 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:12:758 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:28:12:768 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:28:12:768 INFO  [TestNG-PoolService-0] ****             Right rail has Spredfast[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:28:12:769 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:28:13:595 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:28:13:597 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:18:464 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:28:18:466 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:23:501 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:28:23:502 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:24:490 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (45a84235963749c580068663d76fa8e2)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:28:26:244 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:28:26:245 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:26:996 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (68b8cfc6d8b04f4d8d675f8236e921e1)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:28:27:558 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:28:27:559 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:28:307 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:28:28:307 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:30:020 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (45a84235963749c580068663d76fa8e2)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:28:30:022 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:28:30:156 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:28:30:158 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:28:31:441 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (45a84235963749c580068663d76fa8e2)] -> css selector: div[class='weather-module-days'] div[class='weather-module-day']] 
+24-Apr-2018 16:28:31:789 DEBUG [TestNG-PoolService-0] Validating weatherForDays... 
+24-Apr-2018 16:28:32:507 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (68b8cfc6d8b04f4d8d675f8236e921e1)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:28:32:508 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:28:34:736 INFO  [TestNG-PoolService-0] Validation 1: Validated weather details displayed for future three days! 
+24-Apr-2018 16:28:35:329 DEBUG [TestNG-PoolService-0] Validating Spredfast Module... 
+24-Apr-2018 16:28:37:397 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (45a84235963749c580068663d76fa8e2)] -> css selector: div[class='globalRightRail']>div[class='weather-module'], div[class='globalRightRail']>div[class='weather-module-severe']] 
+24-Apr-2018 16:28:37:971 DEBUG [TestNG-PoolService-0] Validating Weather Module... 
+24-Apr-2018 16:28:38:037 INFO  [TestNG-PoolService-0] Validation 1: Validated Spredfast Module. Module loaded on Right Rail as expected! 
+24-Apr-2018 16:28:39:518 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:28:39:519 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:28:39:520 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:28:40:012 INFO  [TestNG-PoolService-0] Validation 2: Validated Weather Module! 
+24-Apr-2018 16:28:49:784 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:28:49:810 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:28:49:813 INFO  [TestNG-PoolService-0] ****             Feed in spredfast are functioning[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:28:49:813 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:28:50:727 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:28:50:728 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:29:14:679 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:29:14:681 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:29:20:172 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (7230fb07648a45618e1a6ea4bc9e9c39)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:29:22:120 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:29:22:121 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:29:23:516 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:29:23:517 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:29:26:007 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (7230fb07648a45618e1a6ea4bc9e9c39)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:29:26:008 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:29:39:725 DEBUG [TestNG-PoolService-0] Validating Spredfast Feed... 
+24-Apr-2018 16:29:42:183 INFO  [TestNG-PoolService-0] Validation 1: Validated Feed in spredfast. All Feed loaded Seconds/Minutes/Hours Ago! 
+24-Apr-2018 16:29:43:966 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:29:43:967 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:29:43:967 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:29:53:140 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:29:53:151 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:29:53:152 INFO  [TestNG-PoolService-0] ****             Watch live TVE dropdown appears[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:29:53:152 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:29:54:040 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:29:54:041 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:29:57:692 DEBUG [TestNG-PoolService-0] Unable to find a element after 51 sec ==> Proxy element for: AjaxElementLocator 'By.cssSelector: div[class*='SmartRadar-pane'] img[class*='leaflet-zoom-animated']' 
+24-Apr-2018 16:29:58:956 DEBUG [TestNG-PoolService-0] Validating Radar... 
+24-Apr-2018 16:30:01:910 INFO  [TestNG-PoolService-0] Validation 4: Validated Radar in Weather Module! 
+24-Apr-2018 16:30:03:410 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:30:03:411 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:30:03:412 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:30:10:831 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:30:10:832 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:30:12:159 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:30:12:182 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:30:12:183 INFO  [TestNG-PoolService-0] ****             TVE dropdown should have: ON NOW, On Demand & Full Schedule whick  click through to TV listings[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:30:12:183 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:30:13:037 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:30:13:038 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:30:15:483 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (707adc5d567147c2b0b1563ba832ff53)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:30:17:210 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:30:17:211 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:30:18:942 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:30:18:943 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:30:21:415 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (707adc5d567147c2b0b1563ba832ff53)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:30:21:416 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:30:22:925 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:30:22:926 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:30:23:939 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (707adc5d567147c2b0b1563ba832ff53)] -> css selector: li[class='nav-small-section nav-live-tv'] a] 
+24-Apr-2018 16:30:26:014 DEBUG [TestNG-PoolService-0] Hovered Watch Live TV Link.. 
+24-Apr-2018 16:30:26:015 INFO  [TestNG-PoolService-0] Step 2. Mouse Hover on Connect Link! 
+24-Apr-2018 16:30:26:778 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e59a00a8607f49368c9813654de37030)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:30:28:502 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:30:28:502 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:30:28:851 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (707adc5d567147c2b0b1563ba832ff53)] -> css selector: li[class='nav-small-section nav-live-tv'] ul[class='nav-small-sub'] li[class='livetv']] 
+24-Apr-2018 16:30:30:979 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:30:30:980 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:30:33:386 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e59a00a8607f49368c9813654de37030)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:30:33:387 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:30:35:622 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e59a00a8607f49368c9813654de37030)] -> css selector: li[class='nav-small-section nav-live-tv'] a] 
+24-Apr-2018 16:30:36:499 DEBUG [TestNG-PoolService-0] Validating Connect Hover Panel... 
+24-Apr-2018 16:30:36:905 DEBUG [TestNG-PoolService-0] Hovered Watch Live TV Link.. 
+24-Apr-2018 16:30:36:905 INFO  [TestNG-PoolService-0] Step 2. Mouse Hover on Connect Link! 
+24-Apr-2018 16:30:39:130 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e59a00a8607f49368c9813654de37030)] -> css selector: li[class='nav-small-section nav-live-tv'] a] 
+24-Apr-2018 16:30:40:020 INFO  [TestNG-PoolService-0] Validation 1: Validated Watch Live TV Hover Panel - Live TV , On Now, On Demand and Full Schedule! 
+24-Apr-2018 16:30:41:929 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e59a00a8607f49368c9813654de37030)] -> css selector: li[class='nav-small-section nav-live-tv'] ul[class='nav-small-sub'] li[class='schedule'] a[data-lid='Click for full schedule']] 
+24-Apr-2018 16:30:42:255 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:30:42:256 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:30:42:257 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:30:52:888 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:30:52:900 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:30:52:901 INFO  [TestNG-PoolService-0] ****             Connect dropdown appears[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:30:52:901 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:30:53:774 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:30:53:775 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:05:900 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:31:05:900 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:12:336 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (90aa81f7a96b4c7385ecb867dec59885)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:31:13:020 FATAL [TestNG-PoolService-0] Timed out after 25 seconds. Unable to locate the element 
+org.openqa.selenium.NoSuchElementException: Timed out after 25 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:90)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at com.nbc.pages.HomePage.navigateToFullScheduleOnLiveTV(HomePage.java:375)
+	at com.nbc.testscripts.demo.NBC_Demo.tc007(NBC_Demo.java:358)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='daySelectWrapper']"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'ASPIREVM15-18', ip: '172.24.115.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.551601 (edb21f07fc70e9..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.117, webStorageEnabled: true, webdriver.remote.sessionid: e59a00a8607f49368c9813654de...}
+Session ID: e59a00a8607f49368c9813654de37030
+*** Element info: {Using=css selector, value=div[class='daySelectWrapper']}
+	at jdk.internal.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:40)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:156)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:86)
+	... 19 more
+24-Apr-2018 16:31:13:035 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:31:13:654 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:31:13:655 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:15:042 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:31:15:043 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:17:552 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (90aa81f7a96b4c7385ecb867dec59885)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:31:17:554 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:31:19:753 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (90aa81f7a96b4c7385ecb867dec59885)] -> css selector: li[class='nav-small-section nav-connect'] a] 
+24-Apr-2018 16:31:21:557 DEBUG [TestNG-PoolService-0] Hovered Connect Link.. 
+24-Apr-2018 16:31:21:557 INFO  [TestNG-PoolService-0] Step 2. Mouse Hover on Connect Link! 
+24-Apr-2018 16:31:22:220 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:31:22:226 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:31:22:227 INFO  [TestNG-PoolService-0] ****             Icons in connect dropdown are clickable and link out[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:31:22:227 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:31:23:136 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:31:23:136 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:23:737 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (90aa81f7a96b4c7385ecb867dec59885)] -> css selector: ul[class='nav-small'] div[class='subnav-large-container'] div[class='nav-connect-sub'] div[class='connect-media']] 
+24-Apr-2018 16:31:28:159 DEBUG [TestNG-PoolService-0] Validating Connect Hover Panel... 
+24-Apr-2018 16:31:30:550 INFO  [TestNG-PoolService-0] Validation 1: Validated Connect Hover Panel - Media , Responds and Footer! 
+24-Apr-2018 16:31:32:880 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:31:32:881 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:31:32:881 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:31:42:344 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:31:42:350 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:31:42:351 INFO  [TestNG-PoolService-0] ****             Share bar is visible and functions[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:31:42:351 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:31:43:200 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:31:43:201 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:43:703 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:31:43:705 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:48:619 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:31:49:978 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:31:49:979 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:51:666 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:31:51:667 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:31:54:490 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:31:54:490 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:31:57:802 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: li[class='nav-small-section nav-connect'] a] 
+24-Apr-2018 16:31:59:694 DEBUG [TestNG-PoolService-0] Hovered Connect Link.. 
+24-Apr-2018 16:31:59:695 INFO  [TestNG-PoolService-0] Step 2. Mouse Hover on Connect Link! 
+24-Apr-2018 16:32:00:712 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:32:00:713 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:32:02:568 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Twitter']>i[class='fa fa-twitter']] 
+24-Apr-2018 16:32:04:616 DEBUG [TestNG-PoolService-0] Validating Connect Twitter... 
+24-Apr-2018 16:32:05:824 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:32:07:352 INFO  [TestNG-PoolService-0] Validation 1: Validated Connect Twitter Link! 
+24-Apr-2018 16:32:07:543 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:32:07:544 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:32:08:850 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:32:08:850 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:32:09:529 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Instagram']>i[class='fa fa-instagram']] 
+24-Apr-2018 16:32:10:802 DEBUG [TestNG-PoolService-0] Validating Connect Instagram... 
+24-Apr-2018 16:32:11:466 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:32:11:467 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:32:12:496 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:32:12:496 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:32:12:699 INFO  [TestNG-PoolService-0] Validation 2: Validated Connect Instagram Link! 
+24-Apr-2018 16:32:17:319 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Facebook']>i[class='fa fa fa-facebook-official']] 
+24-Apr-2018 16:32:18:647 DEBUG [TestNG-PoolService-0] Validating Connect Facebook... 
+24-Apr-2018 16:32:21:029 INFO  [TestNG-PoolService-0] Validation 3: Validated Connect Facebook Link! 
+24-Apr-2018 16:32:23:167 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-apps'] a[data-lid='Mobile']] 
+24-Apr-2018 16:32:24:548 DEBUG [TestNG-PoolService-0] Validating Connect Apps... 
+24-Apr-2018 16:32:26:293 INFO  [TestNG-PoolService-0] Validation 4: Validated Connect Apps Link! 
+24-Apr-2018 16:32:28:357 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-email'] a[data-lid='Newsletters']] 
+24-Apr-2018 16:32:28:695 DEBUG [TestNG-PoolService-0] Clicked first article on Local Stack Section 
+24-Apr-2018 16:32:29:595 DEBUG [TestNG-PoolService-0] Validating Connect Email/NewsLetters... 
+24-Apr-2018 16:32:29:701 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/george-h-w-bush-toronto-mike-pompeo-genital-transplant-smallville-allison-mack-dwayne-the-rock-johnson-480628041.html 
+24-Apr-2018 16:32:29:702 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:32:30:883 INFO  [TestNG-PoolService-0] Validation 5: Validated Connect Emails/NewsLetter Link! 
+24-Apr-2018 16:32:31:820 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:32:32:859 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/george-h-w-bush-toronto-mike-pompeo-genital-transplant-smallville-allison-mack-dwayne-the-rock-johnson-480628041.html 
+24-Apr-2018 16:32:32:860 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:32:33:079 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-ugc'] a[data-lid='UGC'] div[class='connect-ugc-icon'] i[class='fa fa-camera']] 
+24-Apr-2018 16:32:33:787 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/george-h-w-bush-toronto-mike-pompeo-genital-transplant-smallville-allison-mack-dwayne-the-rock-johnson-480628041.html 
+24-Apr-2018 16:32:33:788 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:32:34:613 DEBUG [TestNG-PoolService-0] Validating Connect Email/NewsLetters... 
+24-Apr-2018 16:32:35:890 INFO  [TestNG-PoolService-0] Validation 6: Validated Connect Send Us Videos and Pictures Link! 
+24-Apr-2018 16:32:35:999 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:32:36:000 INFO  [TestNG-PoolService-0] Step 2. Navigated to First Article on Local Stack Section! 
+24-Apr-2018 16:32:37:927 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:32:38:157 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-send'] a[data-lid='Submit Tips'] div[class='connect-apps-icon'] div[class='connect-tips']] 
+24-Apr-2018 16:32:38:458 DEBUG [TestNG-PoolService-0] Validating Facebook Icon... 
+24-Apr-2018 16:32:39:578 DEBUG [TestNG-PoolService-0] Validating Connect Send Tips... 
+24-Apr-2018 16:32:40:680 INFO  [TestNG-PoolService-0] Validation 1: Validated Facebook Icon! 
+24-Apr-2018 16:32:41:964 INFO  [TestNG-PoolService-0] Validation 7: Validated Connect SendTips Link! 
+24-Apr-2018 16:32:42:783 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: i[class='fa fa-twitter fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:32:43:424 DEBUG [TestNG-PoolService-0] Validating Twitter Icon... 
+24-Apr-2018 16:32:44:560 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-footer'] ul li[class='submit-tips'] a[data-lid='Submit Tips']] 
+24-Apr-2018 16:32:44:704 INFO  [TestNG-PoolService-0] Validation 2: Validated Twitter Icon! 
+24-Apr-2018 16:32:45:935 DEBUG [TestNG-PoolService-0] Validating Footer Connect Send Tips... 
+24-Apr-2018 16:32:46:713 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: i[class='fa fa-comments-o fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:32:47:225 DEBUG [TestNG-PoolService-0] Validating Comments Icon... 
+24-Apr-2018 16:32:48:236 INFO  [TestNG-PoolService-0] Validation 8: Validated Footer Connect SendTips Link! 
+24-Apr-2018 16:32:48:832 INFO  [TestNG-PoolService-0] Validation 3: Validated Comments Icon! 
+24-Apr-2018 16:32:50:908 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-footer'] ul li[class='send-feedback'] a[data-lid='Send Feedback']] 
+24-Apr-2018 16:32:51:089 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: i[class='fa fa-envelope-o fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:32:51:664 DEBUG [TestNG-PoolService-0] Validating Email Icon... 
+24-Apr-2018 16:32:52:141 DEBUG [TestNG-PoolService-0] Validating Footer Connect Send Feedback... 
+24-Apr-2018 16:32:52:685 INFO  [TestNG-PoolService-0] Validation 4: Validated Email Icon! 
+24-Apr-2018 16:32:53:780 INFO  [TestNG-PoolService-0] Validation 9: Validated Footer Connect Send Feedback Link! 
+24-Apr-2018 16:32:54:789 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (19eefbb74dcf4e419d5e833882531b4e)] -> css selector: i[class='fa fa-print fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:32:55:856 DEBUG [TestNG-PoolService-0] Validating Print Icon... 
+24-Apr-2018 16:32:55:857 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-footer'] ul li[class='terms'] a[data-lid='Terms of Service']] 
+24-Apr-2018 16:32:57:057 DEBUG [TestNG-PoolService-0] Validating Footer Connect Terms of Service... 
+24-Apr-2018 16:32:58:257 INFO  [TestNG-PoolService-0] Validation 5: Validated Print Icon! 
+24-Apr-2018 16:32:58:511 INFO  [TestNG-PoolService-0] Validation 10: Validated Footer Connect Terms of Service Link! 
+24-Apr-2018 16:33:00:804 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-footer'] ul li[class='privacy-policy'] a[data-lid='Privacy Policy']] 
+24-Apr-2018 16:33:00:972 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:33:00:972 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:33:00:972 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:33:02:269 DEBUG [TestNG-PoolService-0] Validating Footer Connect Privacy Policy... 
+24-Apr-2018 16:33:04:146 INFO  [TestNG-PoolService-0] Validation 11: Validated Footer Connect Privacy Policy Link! 
+24-Apr-2018 16:33:06:478 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (6d7022d70787415993a57122728daa8f)] -> css selector: div[class='nav-connect-footer'] ul li[class='partner'] div[class='connect-brand'] a[data-lid='Duopoly']] 
+24-Apr-2018 16:33:07:747 DEBUG [TestNG-PoolService-0] Validating Footer Connect Partner... 
+24-Apr-2018 16:33:09:238 INFO  [TestNG-PoolService-0] Validation 12: Validated Footer Connect Partner Link! 
+24-Apr-2018 16:33:10:218 DEBUG [TestNG-PoolService-0] Driver::Get 
+24-Apr-2018 16:33:10:224 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:33:10:225 INFO  [TestNG-PoolService-0] ****             Article w/Advanced tagging (HTML Module).[sauceChrome_windows || NBC-NEWYORK ]             ***** 
+24-Apr-2018 16:33:10:225 INFO  [TestNG-PoolService-0]  
+24-Apr-2018 16:33:10:801 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:33:10:802 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:33:10:803 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 
+24-Apr-2018 16:33:11:075 DEBUG [TestNG-PoolService-0] Page URL:: data:, 
+24-Apr-2018 16:33:11:076 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:33:22:821 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:33:22:822 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:33:27:057 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (859763d1398740dea30e08ef949e23b4)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:33:29:069 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:33:29:070 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:33:30:491 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/ 
+24-Apr-2018 16:33:30:492 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:33:33:035 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (859763d1398740dea30e08ef949e23b4)] -> css selector: li[class*='News'] a[lid*='News']] 
+24-Apr-2018 16:33:33:037 INFO  [TestNG-PoolService-0] Step 1. Navigated to 'NBC-NewYork' Home Page! 
+24-Apr-2018 16:33:44:983 DEBUG [TestNG-PoolService-0] Navigated to Article with Advacne Tagging Page 
+24-Apr-2018 16:33:45:838 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html 
+24-Apr-2018 16:33:45:838 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:33:47:742 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (859763d1398740dea30e08ef949e23b4)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:33:48:646 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html 
+24-Apr-2018 16:33:48:647 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:33:49:519 DEBUG [TestNG-PoolService-0] Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html 
+24-Apr-2018 16:33:49:520 DEBUG [TestNG-PoolService-0] Page Load Wait: (Sync) 
+24-Apr-2018 16:33:51:364 DEBUG [TestNG-PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (859763d1398740dea30e08ef949e23b4)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']] 
+24-Apr-2018 16:33:51:366 INFO  [TestNG-PoolService-0] Step 2. Navigated to Article with Advacne Tagging Page! 
+24-Apr-2018 16:33:54:069 DEBUG [TestNG-PoolService-0] Validating HTML Module... 
+24-Apr-2018 16:33:55:894 INFO  [TestNG-PoolService-0] Validation 1: Validated HTML Module! 
+24-Apr-2018 16:34:00:749 DEBUG [TestNG-PoolService-0] Validating HTML Module - ToolBar... 
+24-Apr-2018 16:34:02:615 INFO  [TestNG-PoolService-0] Validation 2: Validated HTML Module Tool bar - Back Home, Zoom-In and Zoom-Out! 
+24-Apr-2018 16:34:06:628 DEBUG [TestNG-PoolService-0] Validating HTML Module - Time Navigation... 
+24-Apr-2018 16:34:07:973 INFO  [TestNG-PoolService-0] Validation 3: Validated HTML Module Time Nav - Time Nav Indicator and Time Nav Interval! 
+24-Apr-2018 16:34:10:433 DEBUG [TestNG-PoolService-0] Validating HTML Module... 
+24-Apr-2018 16:34:11:572 INFO  [TestNG-PoolService-0] Validation 4: Validated HTML Module Slide Container! 
+24-Apr-2018 16:34:12:728 INFO  [TestNG-PoolService-0] Test Passed. 
+24-Apr-2018 16:34:12:730 INFO  [TestNG-PoolService-0] Test Passed.  
+24-Apr-2018 16:34:12:731 INFO  [TestNG-PoolService-0] ****             -E---N---D-             ***** 

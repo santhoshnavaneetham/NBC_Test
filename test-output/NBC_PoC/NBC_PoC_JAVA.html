@@ -1,0 +1,651 @@
+<html>
+<head>
+<title>TestNG:  NBC_PoC_JAVA</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NBC_PoC_JAVA</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 23 20:18:44 BST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>496 seconds (496880 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc002()'><b>tc002</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-692200923" onClick='toggleBox("Output-692200923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-692200923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-692200923">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:55 133 - <b>10</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Top stories playback- with pre roll[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:56 033 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:56 033 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:12 536 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:12 536 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:17 987 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 072 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 088 - <b>3</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:22 588 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:22 588 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:25 214 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:26 515 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: div[class='top-stories'] div[class='story'] div[class='headline'] a div[class='headline-tag']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:38 462 - <b>13</b> - Clicked first article with Video on Top Section - com.nbc.pages.HomePage.clickOnFirstArticleWithVideo_OnTopSection(HomePage.java:297)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:39 392 - Page URL:: https://www.nbcnewyork.com/news/local/best-indian-restaurant-america--480563611.html</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:39 394 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:41 339 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:42 515 - Page URL:: https://www.nbcnewyork.com/news/local/best-indian-restaurant-america--480563611.html</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:42 516 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:43 513 - Page URL:: https://www.nbcnewyork.com/news/local/best-indian-restaurant-america--480563611.html</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:43 515 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:45 451 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 2. Navigated to First Article with Video on Top Section!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:51 742 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div><br/>
+<div class="test-result"><br><font color="red"><strong> Timed out after 25 seconds. Unable to locate the element </strong></font> <a href=".\ScreenShot\tc002_6.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Timed out after 25 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:90)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.nbc.pages.ArticlePage.validateArticleVideoPlayer(ArticlePage.java:106)
+	at com.nbc.testscripts.demo.NBC_Demo.tc002(NBC_Demo.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;player&apos;] div[class=&apos;tpVideoBlocker&apos;]&quot;}
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-ES8HU3L&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.146, webStorageEnabled: true, webdriver.remote.sessionid: 2266f6d04f1f4b4fa0f367ad055...}
+Session ID: 2266f6d04f1f4b4fa0f367ad05513c85
+*** Element info: {Using=css selector, value=div[class=&apos;player&apos;] div[class=&apos;tpVideoBlocker&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:40)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:156)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:86)
+	... 19 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace692200923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace692200923'><pre>org.openqa.selenium.NoSuchElementException: Timed out after 25 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:90)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.nbc.pages.ArticlePage.validateArticleVideoPlayer(ArticlePage.java:106)
+	at com.nbc.testscripts.demo.NBC_Demo.tc002(NBC_Demo.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;player&apos;] div[class=&apos;tpVideoBlocker&apos;]&quot;}
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-ES8HU3L&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.146, webStorageEnabled: true, webdriver.remote.sessionid: 2266f6d04f1f4b4fa0f367ad055...}
+Session ID: 2266f6d04f1f4b4fa0f367ad05513c85
+*** Element info: {Using=css selector, value=div[class=&apos;player&apos;] div[class=&apos;tpVideoBlocker&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:40)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:156)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:86)
+	... 19 more
+</pre></div></td>
+<td>85</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc010()'><b>tc010</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-412567478" onClick='toggleBox("Output-412567478", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-412567478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-412567478">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:49 532 - <b>7</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Share bar is visible and functions[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 332 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 333 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:03 433 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:03 433 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:07 164 - Element is displayed:: [[RemoteWebDriver: chrome on XP (e191cdde52184bc38766866849b435f5)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:08 821 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:08 822 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:10 169 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:10 171 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:12 423 - Element is displayed:: [[RemoteWebDriver: chrome on XP (e191cdde52184bc38766866849b435f5)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:13 593 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:13 593 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:14 580 - <b>2</b> - Clicked first article on Local Stack Section - com.nbc.pages.HomePage.clickOnFirstArticle_OnLocalStackSection(HomePage.java:286)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:15 497 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:15 513 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:33 032 - Unable to find a element after 51 sec ==> Proxy element for: AjaxElementLocator 'By.cssSelector: i[class='fa fa-facebook fa-stack-1x fa-inverse']'</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:34 255 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:34 255 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:35 342 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:35 343 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:52 866 - Unable to find a element after 51 sec ==> Proxy element for: AjaxElementLocator 'By.cssSelector: i[class='fa fa-facebook fa-stack-1x fa-inverse']'</small> </font> </div><br/>
+<div class="test-result"><br><font color="red"><strong> Article Page did not open up. Site might be down. </strong></font> <a href=".\ScreenShot\tc010_39.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Article Page did not open up. Site might be down.
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.nbc.support.Log.fail(Log.java:638)
+	at com.nbc.pages.ArticlePage.isLoaded(ArticlePage.java:86)
+	at org.openqa.selenium.support.ui.LoadableComponent.get(LoadableComponent.java:52)
+	at com.nbc.pages.HomePage.clickOnFirstArticle_OnLocalStackSection(HomePage.java:287)
+	at com.nbc.testscripts.demo.NBC_Demo.tc010(NBC_Demo.java:534)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace412567478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace412567478'><pre>java.lang.AssertionError: Article Page did not open up. Site might be down.
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.nbc.support.Log.fail(Log.java:638)
+	at com.nbc.pages.ArticlePage.isLoaded(ArticlePage.java:86)
+	at org.openqa.selenium.support.ui.LoadableComponent.get(LoadableComponent.java:52)
+	at com.nbc.pages.HomePage.clickOnFirstArticle_OnLocalStackSection(HomePage.java:287)
+	at com.nbc.testscripts.demo.NBC_Demo.tc010(NBC_Demo.java:534)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>191</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc001()'><b>tc001</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-1203562079" onClick='toggleBox("Output-1203562079", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1203562079" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1203562079">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:53 501 - <b>9</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Logo is clickable[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:54 864 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:54 864 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:13 483 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:13 483 - <b>3</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:19 419 - Element is displayed:: [[RemoteWebDriver: chrome on XP (383fa72853424a9593e5fa24959cdebc)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 325 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 325 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:23 089 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:23 089 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:25 384 - Element is displayed:: [[RemoteWebDriver: chrome on XP (383fa72853424a9593e5fa24959cdebc)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:26 753 - <b>1</b> - Validating Brand Logo... - com.nbc.pages.HomePage.validateLogo(HomePage.java:392)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Branding Logo available as expected! </strong></font> <a href=".\ScreenShot\tc001_1.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:30 523 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:30 523 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:42 692 - <b>45201</b> - Clicked on News link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 2. Navigated to 'News' Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:43 979 - <b>1</b> - Validating Brand Logo... - com.nbc.pages.HomePage.validateLogo(HomePage.java:392)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 2: Branding Logo available as expected! </strong></font> <a href=".\ScreenShot\tc001_2.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:47 763 - Element is displayed:: [[RemoteWebDriver: chrome on XP (383fa72853424a9593e5fa24959cdebc)] -> css selector: div[class='brand'] a[data-lid='logo'] img]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:58 441 - <b>61787</b> - Clicked on Home link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 3. Clicked on Brand Logo!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:59 419 - <b>0</b> - Validating Home Page... - com.nbc.pages.HomePage.validateHomePage(HomePage.java:409)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 3: Navigated to Home Page as expected! </strong></font> <a href=".\ScreenShot\tc001_3.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:05 361 - <b>2</b> - Validating Brand Logo... - com.nbc.pages.HomePage.validateLogo(HomePage.java:392)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 4: Branding Logo available as expected! </strong></font> <a href=".\ScreenShot\tc001_4.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc001_5.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>77</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc003()'><b>tc003</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-75782087" onClick='toggleBox("Output-75782087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-75782087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-75782087">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:19 064 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Weather module appears on HP and map loads[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:20 014 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:20 015 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:43 993 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:43 995 - <b>3</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:48 523 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:50 136 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:50 138 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 646 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 647 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:54 477 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:56 169 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: div[class='weather-module-days'] div[class='weather-module-day']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:56 594 - <b>2</b> - Validating weatherForDays... - com.nbc.pages.HomePage.validateWeatherForDays(HomePage.java:448)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated weather details displayed for future three days! </strong></font> <a href=".\ScreenShot\tc003_7.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:02 150 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: div[class='globalRightRail']>div[class='weather-module'], div[class='globalRightRail']>div[class='weather-module-severe']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:02 908 - <b>3</b> - Validating Weather Module... - com.nbc.pages.HomePage.validateWeatherModule(HomePage.java:466)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 2: Validated Weather Module! </strong></font> <a href=".\ScreenShot\tc003_10.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:27 074 - Unable to find a element after 52 sec ==> Proxy element for: AjaxElementLocator 'By.cssSelector: div[class*='SmartRadar-pane'] img[class*='leaflet-zoom-animated']'</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:28 436 - <b>80</b> - Validating Radar... - com.nbc.pages.HomePage.validateRadarOnWeatherModule(HomePage.java:431)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 4: Validated Radar in Weather Module! </strong></font> <a href=".\ScreenShot\tc003_13.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc003_14.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>140</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc004()'><b>tc004</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-1872095184" onClick='toggleBox("Output-1872095184", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1872095184" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1872095184">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:28 666 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Right rail has Spredfast[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:29 479 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:29 480 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:44 577 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:44 578 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:50 317 - Element is displayed:: [[RemoteWebDriver: chrome on XP (50d78d5439334c76a474e0019dd7edb0)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 933 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 934 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:53 398 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:53 400 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:55 614 - Element is displayed:: [[RemoteWebDriver: chrome on XP (50d78d5439334c76a474e0019dd7edb0)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:58 819 - <b>3</b> - Validating Spredfast Module... - com.nbc.pages.HomePage.validateSpredfastModule(HomePage.java:550)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated Spredfast Module. Module loaded on Right Rail as expected! </strong></font> <a href=".\ScreenShot\tc004_8.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc004_9.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc005()'><b>tc005</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-22692575" onClick='toggleBox("Output-22692575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22692575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22692575">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:11 364 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Feed in spredfast are functioning[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:12 285 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:12 287 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:34 029 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:34 030 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:37 791 - Element is displayed:: [[RemoteWebDriver: chrome on XP (0c95d4b1021c43c6bea2ced8c068ef9d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:39 010 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:39 012 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:40 301 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:40 303 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:42 462 - Element is displayed:: [[RemoteWebDriver: chrome on XP (0c95d4b1021c43c6bea2ced8c068ef9d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:55 395 - <b>12</b> - Validating Spredfast Feed... - com.nbc.pages.HomePage.validateSpredfastFeed(HomePage.java:581)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated Feed in spredfast. All Feed loaded Seconds/Minutes/Hours Ago! </strong></font> <a href=".\ScreenShot\tc005_11.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc005_12.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc006()'><b>tc006</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-623811955" onClick='toggleBox("Output-623811955", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-623811955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-623811955">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:08 474 - <b>9</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Watch live TVE dropdown appears[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:09 323 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:09 324 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:22 400 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:22 405 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:26 151 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:27 563 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:27 565 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:29 427 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:29 428 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:32 362 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:34 799 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class='nav-small-section nav-live-tv'] a]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:36 295 - <b>228172</b> - Hovered Watch Live TV Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:38 260 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class='nav-small-section nav-live-tv'] ul[class='nav-small-sub'] li[class='livetv']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:43 020 - <b>6</b> - Validating Connect Hover Panel... - com.nbc.pages.HomePage.validateWatchLiveTVHoverPanel(HomePage.java:528)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated Watch Live TV Hover Panel - Live TV , On Now, On Demand and Full Schedule! </strong></font> <a href=".\ScreenShot\tc006_15.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc006_16.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc007()'><b>tc007</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-1291470706" onClick='toggleBox("Output-1291470706", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1291470706" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1291470706">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:47 194 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">TVE dropdown should have: ON NOW, On Demand & Full Schedule whick  click through to TV listings[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:47 998 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:48 000 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:57 075 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:57 077 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:00 469 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:01 656 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:01 657 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:02 849 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:02 851 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:05 377 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:07 804 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class='nav-small-section nav-live-tv'] a]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:09 190 - <b>261185</b> - Hovered Watch Live TV Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:11 194 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class='nav-small-section nav-live-tv'] a]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:13 857 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class='nav-small-section nav-live-tv'] ul[class='nav-small-sub'] li[class='schedule'] a[data-lid='Click for full schedule']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:19 505 - <b>265000</b> - Navigated to Full Schedule On Live TV.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 3. Navigated to Full Schedule On Live TV!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:21 292 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: div[class='daySelectWrapper']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:25 248 - <b>5</b> - Validating TV Listing... - com.nbc.pages.HomePage.validateTVListing(HomePage.java:604)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated TV Listing - TV Listing Page, TV Tabs, Date Picker and Now TV! </strong></font> <a href=".\ScreenShot\tc007_17.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc007_18.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc008()'><b>tc008</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-1714194332" onClick='toggleBox("Output-1714194332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714194332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714194332">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:59 328 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Connect dropdown appears[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:00 112 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:00 112 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:12 804 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:12 804 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:17 556 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:19 120 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:19 120 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:21 223 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:21 223 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:24 131 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:26 775 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: li[class='nav-small-section nav-connect'] a]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:28 456 - <b>279950</b> - Hovered Connect Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:30 738 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: ul[class='nav-small'] div[class='subnav-large-container'] div[class='nav-connect-sub'] div[class='connect-media']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:34 964 - <b>6</b> - Validating Connect Hover Panel... - com.nbc.pages.HomePage.validateConnectHoverPanel(HomePage.java:505)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated Connect Hover Panel - Media , Responds and Footer! </strong></font> <a href=".\ScreenShot\tc008_19.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc008_20.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc009()'><b>tc009</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-1165752274" onClick='toggleBox("Output-1165752274", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1165752274" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1165752274">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:36 615 - <b>7</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Icons in connect dropdown are clickable and link out[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:37 416 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:37 416 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:45 393 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:45 394 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:48 162 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:49 310 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:49 310 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 481 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 481 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:52 414 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:54 500 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: li[class='nav-small-section nav-connect'] a]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:55 656 - <b>308225</b> - Hovered Connect Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:57 794 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Twitter']>i[class='fa fa-twitter']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:58 949 - <b>3</b> - Validating Connect Twitter... - com.nbc.pages.HomePage.validateConnectTwitter(HomePage.java:622)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated Connect Twitter Link! </strong></font> <a href=".\ScreenShot\tc009_21.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:03 263 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Instagram']>i[class='fa fa-instagram']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:04 413 - <b>3</b> - Validating Connect Instagram... - com.nbc.pages.HomePage.validateConnectInstagram(HomePage.java:640)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 2: Validated Connect Instagram Link! </strong></font> <a href=".\ScreenShot\tc009_22.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:07 645 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Facebook']>i[class='fa fa fa-facebook-official']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:08 737 - <b>3</b> - Validating Connect Facebook... - com.nbc.pages.HomePage.validateConnectFacebook(HomePage.java:658)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 3: Validated Connect Facebook Link! </strong></font> <a href=".\ScreenShot\tc009_23.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:11 622 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-apps'] a[data-lid='Mobile']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:12 653 - <b>2</b> - Validating Connect Apps... - com.nbc.pages.HomePage.validateConnectApps(HomePage.java:676)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 4: Validated Connect Apps Link! </strong></font> <a href=".\ScreenShot\tc009_24.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:15 487 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-email'] a[data-lid='Newsletters']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:16 532 - <b>2</b> - Validating Connect Email/NewsLetters... - com.nbc.pages.HomePage.validateConnectEmailNewsLetters(HomePage.java:694)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 5: Validated Connect Emails/NewsLetter Link! </strong></font> <a href=".\ScreenShot\tc009_25.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:19 402 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-ugc'] a[data-lid='UGC'] div[class='connect-ugc-icon'] i[class='fa fa-camera']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:20 462 - <b>2</b> - Validating Connect Email/NewsLetters... - com.nbc.pages.HomePage.validateConnectSendUsVideosandPictures(HomePage.java:712)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 6: Validated Connect Send Us Videos and Pictures Link! </strong></font> <a href=".\ScreenShot\tc009_26.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:23 715 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-send'] a[data-lid='Submit Tips'] div[class='connect-apps-icon'] div[class='connect-tips']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:24 946 - <b>3</b> - Validating Connect Send Tips... - com.nbc.pages.HomePage.validateConnectSendTips(HomePage.java:730)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 7: Validated Connect SendTips Link! </strong></font> <a href=".\ScreenShot\tc009_27.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:28 479 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='submit-tips'] a[data-lid='Submit Tips']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:29 595 - <b>3</b> - Validating Footer Connect Send Tips... - com.nbc.pages.HomePage.validateFooterConnectSendTips(HomePage.java:748)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 8: Validated Footer Connect SendTips Link! </strong></font> <a href=".\ScreenShot\tc009_28.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:32 767 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='send-feedback'] a[data-lid='Send Feedback']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:33 837 - <b>3</b> - Validating Footer Connect Send Feedback... - com.nbc.pages.HomePage.validateFooterConnectSendFeedback(HomePage.java:766)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 9: Validated Footer Connect Send Feedback Link! </strong></font> <a href=".\ScreenShot\tc009_29.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:36 823 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='terms'] a[data-lid='Terms of Service']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:37 923 - <b>2</b> - Validating Footer Connect Terms of Service... - com.nbc.pages.HomePage.validateFooterConnectTermsofService(HomePage.java:784)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 10: Validated Footer Connect Terms of Service Link! </strong></font> <a href=".\ScreenShot\tc009_30.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:40 972 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='privacy-policy'] a[data-lid='Privacy Policy']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:42 025 - <b>2</b> - Validating Footer Connect Privacy Policy... - com.nbc.pages.HomePage.validateFooterConnectPrivacyPolicy(HomePage.java:802)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 11: Validated Footer Connect Privacy Policy Link! </strong></font> <a href=".\ScreenShot\tc009_31.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:45 027 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='partner'] div[class='connect-brand'] a[data-lid='Duopoly']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:46 143 - <b>2</b> - Validating Footer Connect Partner... - com.nbc.pages.HomePage.validateFooterConnectPartner(HomePage.java:820)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 12: Validated Footer Connect Partner Link! </strong></font> <a href=".\ScreenShot\tc009_32.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc009_33.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+<tr>
+<td title='com.nbc.testscripts.demo.NBC_Demo.tc011()'><b>tc011</b><br>Test class: com.nbc.testscripts.demo.NBC_Demo<br>Parameters: , chrome_XP, http://www.nbcnewyork.com_NBC-NewYork<br/>
+<a href="#Output-2145410287" onClick='toggleBox("Output-2145410287", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2145410287" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2145410287">
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:57 880 - <b>9</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div><br/>
+&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Article w/Advanced tagging (HTML Module).[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:58 712 - Page URL:: data:,</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:58 712 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:20 248 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:20 248 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:24 626 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:26 178 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:26 178 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:27 664 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:27 664 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:30 439 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:50 668 - <b>20</b> - Navigated to Article with Advacne Tagging Page - com.nbc.pages.HomePage.navigateToArticleWithAdvacneTagging(HomePage.java:307)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:51 531 - Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:51 531 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:53 348 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 148 - Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 148 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 886 - Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 886 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:56 450 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div><br/>
+<div class="test-message">&emsp;Step 2. Navigated to Article with Advacne Tagging Page!</div><br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:59 337 - <b>2</b> - Validating HTML Module... - com.nbc.pages.ArticlePage.validateHTMLModule(ArticlePage.java:224)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 1: Validated HTML Module! </strong></font> <a href=".\ScreenShot\tc011_34.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:05 763 - <b>4</b> - Validating HTML Module - ToolBar... - com.nbc.pages.ArticlePage.validateHTMLModule_Toolbar(ArticlePage.java:254)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 2: Validated HTML Module Tool bar - Back Home, Zoom-In and Zoom-Out! </strong></font> <a href=".\ScreenShot\tc011_35.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:09 888 - <b>3</b> - Validating HTML Module - Time Navigation... - com.nbc.pages.ArticlePage.validateHTMLModule_TimeNavigation(ArticlePage.java:280)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 3: Validated HTML Module Time Nav - Time Nav Indicator and Time Nav Interval! </strong></font> <a href=".\ScreenShot\tc011_36.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:12 990 - <b>2</b> - Validating HTML Module... - com.nbc.pages.ArticlePage.validateHTMLModuleSlideContainer(ArticlePage.java:303)</small> </font> </div><br/>
+<div class="test-result"><br><font color="green"><strong> Validation 4: Validated HTML Module Slide Container! </strong></font> <a href=".\ScreenShot\tc011_37.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc011_38.png" target="_blank" >[ScreenShot]</a></div>&emsp;<br/>
+<div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;<br/>
+</div>
+</td>
+<td></td>
+<td>77</td>
+<td>com.nbc.testscripts.demo.NBC_Demo@3c0f93f1</td></tr>
+</table><p>
+</body>
+</html>

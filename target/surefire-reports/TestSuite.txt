@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 437.456 s <<< FAILURE! - in TestSuite
+tc002(com.nbc.testscripts.demo.NBC_Demo)  Time elapsed: 54.554 s  <<< FAILURE!
+java.lang.AssertionError: Article Video Player failed to load
+	at com.nbc.testscripts.demo.NBC_Demo.tc002(NBC_Demo.java:115)
+
+tc007(com.nbc.testscripts.demo.NBC_Demo)  Time elapsed: 29.189 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Timed out after 25 seconds. Unable to locate the element
+	at com.nbc.testscripts.demo.NBC_Demo.tc007(NBC_Demo.java:358)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[class='daySelectWrapper']"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'ASPIREVM15-18', ip: '172.24.115.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.551601 (edb21f07fc70e9..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.117, webStorageEnabled: true, webdriver.remote.sessionid: e59a00a8607f49368c9813654de...}
+Session ID: e59a00a8607f49368c9813654de37030
+*** Element info: {Using=css selector, value=div[class='daySelectWrapper']}
+	at com.nbc.testscripts.demo.NBC_Demo.tc007(NBC_Demo.java:358)
+

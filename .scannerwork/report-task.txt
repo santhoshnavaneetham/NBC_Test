@@ -1,0 +1,6 @@
+projectKey=NBC
+serverUrl=http://172.24.112.121:9000
+serverVersion=6.7.1.35068
+dashboardUrl=http://172.24.112.121:9000/dashboard/index/NBC
+ceTaskId=AWL3H00ARTyLGr1nPnC1
+ceTaskUrl=http://172.24.112.121:9000/api/ce/task?id=AWL3H00ARTyLGr1nPnC1

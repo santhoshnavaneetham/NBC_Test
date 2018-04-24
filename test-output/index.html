@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-NBC_PoC">
+              <span class="suite-name border-failed">NBC_PoC</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-NBC_PoC">
+                    <span>C:\Aspire Work\NBC PoC\TestNG_XML_Sauce\NBC_Demo_NY.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-NBC_PoC">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-NBC_PoC">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-NBC_PoC">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-NBC_PoC">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-NBC_PoC">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-NBC_PoC">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-NBC_PoC" class="hide-methods failed suite-NBC_PoC"> (hide)</a> <!-- hide-methods failed suite-NBC_PoC -->
+                      <a href="#" panel-name="suite-NBC_PoC" class="show-methods failed suite-NBC_PoC"> (show)</a> <!-- show-methods failed suite-NBC_PoC -->
+                    </span>
+                    <div class="method-list-content failed suite-NBC_PoC">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc002(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc002(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc010(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc010(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-NBC_PoC -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-NBC_PoC" class="hide-methods passed suite-NBC_PoC"> (hide)</a> <!-- hide-methods passed suite-NBC_PoC -->
+                      <a href="#" panel-name="suite-NBC_PoC" class="show-methods passed suite-NBC_PoC"> (show)</a> <!-- show-methods passed suite-NBC_PoC -->
+                    </span>
+                    <div class="method-list-content passed suite-NBC_PoC">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc001(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc001(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc003(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc003(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc004(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc004(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc005(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc005(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc006(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc006(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc007(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc007(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc008(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc008(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc009(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc009(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-NBC_PoC" title="com.nbc.testscripts.demo.NBC_Demo" hash-for-method="tc011(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">tc011(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-NBC_PoC -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-NBC_PoC" class="panel NBC_PoC">
+          <div class="suite-NBC_PoC-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.nbc.testscripts.demo.NBC_Demo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc002(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc002(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc002</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Timed out after 25 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:90)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.nbc.pages.ArticlePage.validateArticleVideoPlayer(ArticlePage.java:106)
+	at com.nbc.testscripts.demo.NBC_Demo.tc002(NBC_Demo.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;player&apos;] div[class=&apos;tpVideoBlocker&apos;]&quot;}
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-ES8HU3L&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.146, webStorageEnabled: true, webdriver.remote.sessionid: 2266f6d04f1f4b4fa0f367ad055...}
+Session ID: 2266f6d04f1f4b4fa0f367ad05513c85
+*** Element info: {Using=css selector, value=div[class=&apos;player&apos;] div[class=&apos;tpVideoBlocker&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:40)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:156)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:86)
+	... 19 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc010(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc010(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc010</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Article Page did not open up. Site might be down.
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.nbc.support.Log.fail(Log.java:638)
+	at com.nbc.pages.ArticlePage.isLoaded(ArticlePage.java:86)
+	at org.openqa.selenium.support.ui.LoadableComponent.get(LoadableComponent.java:52)
+	at com.nbc.pages.HomePage.clickOnFirstArticle_OnLocalStackSection(HomePage.java:287)
+	at com.nbc.testscripts.demo.NBC_Demo.tc010(NBC_Demo.java:534)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NBC_PoC-class-failed -->
+          <div class="suite-NBC_PoC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nbc.testscripts.demo.NBC_Demo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc001(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc001(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc001</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc003(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc003(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc003</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc004(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc004(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc004</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc005(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc005(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc005</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc006(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc006(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc006</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc007(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc007(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc007</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc008(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc008(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc008</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc009(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc009(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc009</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc011(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)">
+                  </a> <!-- tc011(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork) -->
+                  <span class="method-name">tc011</span>
+                  <span class="parameters">(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NBC_PoC-class-passed -->
+        </div> <!-- panel NBC_PoC -->
+        <div panel-name="test-xml-NBC_PoC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Aspire Work\NBC PoC\TestNG_XML_Sauce\NBC_Demo_NY.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot; name=&quot;NBC_PoC&quot; parallel=&quot;methods&quot;&gt;
+  &lt;parameter name=&quot;webSite&quot; value=&quot;http://www.nbcnewyork.com_NBC-NewYork&quot;/&gt;
+  &lt;parameter name=&quot;deviceHost&quot; value=&quot;localhost&quot;/&gt;
+  &lt;parameter name=&quot;imageLoad&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;har&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;devicePort&quot; value=&quot;4444&quot;/&gt;
+  &lt;parameter name=&quot;browserName&quot; value=&quot;sauceChrome_windows&quot;/&gt;
+  &lt;parameter name=&quot;framesLoad&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;documentLoad&quot; value=&quot;true&quot;/&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;3&quot; name=&quot;NBC_PoC_JAVA&quot; parallel=&quot;methods&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.nbc.testscripts.demo.NBC_Demo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NBC_PoC_JAVA --&gt;
+&lt;/suite&gt; &lt;!-- NBC_PoC --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-NBC_PoC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for NBC_PoC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">NBC_PoC_JAVA (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-NBC_PoC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for NBC_PoC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-NBC_PoC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for NBC_PoC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_NBC_PoC');
+function tableData_NBC_PoC() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'tc010')
+data.setCell(0, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(0, 3, 191589);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc003')
+data.setCell(1, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(1, 3, 140340);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc002')
+data.setCell(2, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(2, 3, 85643);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc011')
+data.setCell(3, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(3, 3, 77443);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc001')
+data.setCell(4, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(4, 3, 77139);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc009')
+data.setCell(5, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(5, 3, 72111);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc005')
+data.setCell(6, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(6, 3, 48049);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tc006')
+data.setCell(7, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(7, 3, 42907);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'tc008')
+data.setCell(8, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(8, 3, 42539);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tc007')
+data.setCell(9, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(9, 3, 42004);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tc004')
+data.setCell(10, 2, 'com.nbc.testscripts.demo.NBC_Demo')
+data.setCell(10, 3, 34862);
+window.suiteTableData['NBC_PoC']= { tableData: data, tableDiv: 'times-div-NBC_PoC'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <div id="times-div-NBC_PoC">
+              </div> <!-- times-div-NBC_PoC -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-NBC_PoC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for NBC_PoC</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc008(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:59 328 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Connect dropdown appears[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:00 112 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:00 112 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:12 804 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:12 804 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:17 556 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:19 120 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:19 120 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:21 223 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:21 223 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:24 131 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:26 775 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: li[class='nav-small-section nav-connect'] a]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:28 456 - <b>279950</b> - Hovered Connect Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:30 738 - Element is displayed:: [[RemoteWebDriver: chrome on XP (6954ae99b699409da6ca322c249f68be)] -> css selector: ul[class='nav-small'] div[class='subnav-large-container'] div[class='nav-connect-sub'] div[class='connect-media']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:34 964 - <b>6</b> - Validating Connect Hover Panel... - com.nbc.pages.HomePage.validateConnectHoverPanel(HomePage.java:505)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated Connect Hover Panel - Media , Responds and Footer! </strong></font> <a href=".\ScreenShot\tc008_19.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc008_20.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc001(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:53 501 - <b>9</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Logo is clickable[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:54 864 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:54 864 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:13 483 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:13 483 - <b>3</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:19 419 - Element is displayed:: [[RemoteWebDriver: chrome on XP (383fa72853424a9593e5fa24959cdebc)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 325 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 325 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:23 089 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:23 089 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:25 384 - Element is displayed:: [[RemoteWebDriver: chrome on XP (383fa72853424a9593e5fa24959cdebc)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:26 753 - <b>1</b> - Validating Brand Logo... - com.nbc.pages.HomePage.validateLogo(HomePage.java:392)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Branding Logo available as expected! </strong></font> <a href=".\ScreenShot\tc001_1.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:30 523 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:30 523 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:42 692 - <b>45201</b> - Clicked on News link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 2. Navigated to 'News' Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:43 979 - <b>1</b> - Validating Brand Logo... - com.nbc.pages.HomePage.validateLogo(HomePage.java:392)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 2: Branding Logo available as expected! </strong></font> <a href=".\ScreenShot\tc001_2.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:47 763 - Element is displayed:: [[RemoteWebDriver: chrome on XP (383fa72853424a9593e5fa24959cdebc)] -> css selector: div[class='brand'] a[data-lid='logo'] img]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:58 441 - <b>61787</b> - Clicked on Home link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 3. Clicked on Brand Logo!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:59 419 - <b>0</b> - Validating Home Page... - com.nbc.pages.HomePage.validateHomePage(HomePage.java:409)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 3: Navigated to Home Page as expected! </strong></font> <a href=".\ScreenShot\tc001_3.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:05 361 - <b>2</b> - Validating Brand Logo... - com.nbc.pages.HomePage.validateLogo(HomePage.java:392)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 4: Branding Logo available as expected! </strong></font> <a href=".\ScreenShot\tc001_4.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc001_5.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc003(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:19 064 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Weather module appears on HP and map loads[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:20 014 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:20 015 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:43 993 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:43 995 - <b>3</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:48 523 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:50 136 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:50 138 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 646 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 647 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:54 477 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:56 169 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: div[class='weather-module-days'] div[class='weather-module-day']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:56 594 - <b>2</b> - Validating weatherForDays... - com.nbc.pages.HomePage.validateWeatherForDays(HomePage.java:448)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated weather details displayed for future three days! </strong></font> <a href=".\ScreenShot\tc003_7.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:02 150 - Element is displayed:: [[RemoteWebDriver: chrome on XP (8759c6f914e84989bb58a9e0b7dd5b0d)] -> css selector: div[class='globalRightRail']>div[class='weather-module'], div[class='globalRightRail']>div[class='weather-module-severe']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:02 908 - <b>3</b> - Validating Weather Module... - com.nbc.pages.HomePage.validateWeatherModule(HomePage.java:466)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 2: Validated Weather Module! </strong></font> <a href=".\ScreenShot\tc003_10.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:27 074 - Unable to find a element after 52 sec ==> Proxy element for: AjaxElementLocator 'By.cssSelector: div[class*='SmartRadar-pane'] img[class*='leaflet-zoom-animated']'</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:28 436 - <b>80</b> - Validating Radar... - com.nbc.pages.HomePage.validateRadarOnWeatherModule(HomePage.java:431)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 4: Validated Radar in Weather Module! </strong></font> <a href=".\ScreenShot\tc003_13.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc003_14.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc004(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:28 666 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Right rail has Spredfast[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:29 479 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:29 480 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:44 577 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:44 578 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:50 317 - Element is displayed:: [[RemoteWebDriver: chrome on XP (50d78d5439334c76a474e0019dd7edb0)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 933 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:51 934 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:53 398 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:53 400 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:55 614 - Element is displayed:: [[RemoteWebDriver: chrome on XP (50d78d5439334c76a474e0019dd7edb0)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:20:58 819 - <b>3</b> - Validating Spredfast Module... - com.nbc.pages.HomePage.validateSpredfastModule(HomePage.java:550)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated Spredfast Module. Module loaded on Right Rail as expected! </strong></font> <a href=".\ScreenShot\tc004_8.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc004_9.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc005(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:11 364 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Feed in spredfast are functioning[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:12 285 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:12 287 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:34 029 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:34 030 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:37 791 - Element is displayed:: [[RemoteWebDriver: chrome on XP (0c95d4b1021c43c6bea2ced8c068ef9d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:39 010 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:39 012 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:40 301 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:40 303 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:42 462 - Element is displayed:: [[RemoteWebDriver: chrome on XP (0c95d4b1021c43c6bea2ced8c068ef9d)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:21:55 395 - <b>12</b> - Validating Spredfast Feed... - com.nbc.pages.HomePage.validateSpredfastFeed(HomePage.java:581)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated Feed in spredfast. All Feed loaded Seconds/Minutes/Hours Ago! </strong></font> <a href=".\ScreenShot\tc005_11.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc005_12.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc007(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:47 194 - <b>8</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">TVE dropdown should have: ON NOW, On Demand & Full Schedule whick  click through to TV listings[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:47 998 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:48 000 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:57 075 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:57 077 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:00 469 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:01 656 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:01 657 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:02 849 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:02 851 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:05 377 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:07 804 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class='nav-small-section nav-live-tv'] a]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:09 190 - <b>261185</b> - Hovered Watch Live TV Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:11 194 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class='nav-small-section nav-live-tv'] a]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:13 857 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: li[class='nav-small-section nav-live-tv'] ul[class='nav-small-sub'] li[class='schedule'] a[data-lid='Click for full schedule']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:19 505 - <b>265000</b> - Navigated to Full Schedule On Live TV.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 3. Navigated to Full Schedule On Live TV!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:21 292 - Element is displayed:: [[RemoteWebDriver: chrome on XP (a199c9a077f04722add756d144d1b29b)] -> css selector: div[class='daySelectWrapper']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:25 248 - <b>5</b> - Validating TV Listing... - com.nbc.pages.HomePage.validateTVListing(HomePage.java:604)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated TV Listing - TV Listing Page, TV Tabs, Date Picker and Now TV! </strong></font> <a href=".\ScreenShot\tc007_17.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc007_18.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc009(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:36 615 - <b>7</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Icons in connect dropdown are clickable and link out[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:37 416 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:37 416 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:45 393 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:45 394 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:48 162 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:49 310 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:49 310 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 481 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 481 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:52 414 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:54 500 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: li[class='nav-small-section nav-connect'] a]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:55 656 - <b>308225</b> - Hovered Connect Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:57 794 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Twitter']>i[class='fa fa-twitter']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:58 949 - <b>3</b> - Validating Connect Twitter... - com.nbc.pages.HomePage.validateConnectTwitter(HomePage.java:622)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated Connect Twitter Link! </strong></font> <a href=".\ScreenShot\tc009_21.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:03 263 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Instagram']>i[class='fa fa-instagram']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:04 413 - <b>3</b> - Validating Connect Instagram... - com.nbc.pages.HomePage.validateConnectInstagram(HomePage.java:640)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 2: Validated Connect Instagram Link! </strong></font> <a href=".\ScreenShot\tc009_22.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:07 645 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-social'] div[class='connect-social-icons'] a[data-lid='Facebook']>i[class='fa fa fa-facebook-official']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:08 737 - <b>3</b> - Validating Connect Facebook... - com.nbc.pages.HomePage.validateConnectFacebook(HomePage.java:658)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 3: Validated Connect Facebook Link! </strong></font> <a href=".\ScreenShot\tc009_23.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:11 622 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-apps'] a[data-lid='Mobile']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:12 653 - <b>2</b> - Validating Connect Apps... - com.nbc.pages.HomePage.validateConnectApps(HomePage.java:676)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 4: Validated Connect Apps Link! </strong></font> <a href=".\ScreenShot\tc009_24.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:15 487 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-email'] a[data-lid='Newsletters']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:16 532 - <b>2</b> - Validating Connect Email/NewsLetters... - com.nbc.pages.HomePage.validateConnectEmailNewsLetters(HomePage.java:694)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 5: Validated Connect Emails/NewsLetter Link! </strong></font> <a href=".\ScreenShot\tc009_25.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:19 402 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-ugc'] a[data-lid='UGC'] div[class='connect-ugc-icon'] i[class='fa fa-camera']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:20 462 - <b>2</b> - Validating Connect Email/NewsLetters... - com.nbc.pages.HomePage.validateConnectSendUsVideosandPictures(HomePage.java:712)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 6: Validated Connect Send Us Videos and Pictures Link! </strong></font> <a href=".\ScreenShot\tc009_26.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:23 715 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-sub'] div[class='connect-media'] div[class='connect-send'] a[data-lid='Submit Tips'] div[class='connect-apps-icon'] div[class='connect-tips']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:24 946 - <b>3</b> - Validating Connect Send Tips... - com.nbc.pages.HomePage.validateConnectSendTips(HomePage.java:730)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 7: Validated Connect SendTips Link! </strong></font> <a href=".\ScreenShot\tc009_27.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:28 479 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='submit-tips'] a[data-lid='Submit Tips']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:29 595 - <b>3</b> - Validating Footer Connect Send Tips... - com.nbc.pages.HomePage.validateFooterConnectSendTips(HomePage.java:748)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 8: Validated Footer Connect SendTips Link! </strong></font> <a href=".\ScreenShot\tc009_28.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:32 767 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='send-feedback'] a[data-lid='Send Feedback']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:33 837 - <b>3</b> - Validating Footer Connect Send Feedback... - com.nbc.pages.HomePage.validateFooterConnectSendFeedback(HomePage.java:766)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 9: Validated Footer Connect Send Feedback Link! </strong></font> <a href=".\ScreenShot\tc009_29.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:36 823 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='terms'] a[data-lid='Terms of Service']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:37 923 - <b>2</b> - Validating Footer Connect Terms of Service... - com.nbc.pages.HomePage.validateFooterConnectTermsofService(HomePage.java:784)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 10: Validated Footer Connect Terms of Service Link! </strong></font> <a href=".\ScreenShot\tc009_30.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:40 972 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='privacy-policy'] a[data-lid='Privacy Policy']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:42 025 - <b>2</b> - Validating Footer Connect Privacy Policy... - com.nbc.pages.HomePage.validateFooterConnectPrivacyPolicy(HomePage.java:802)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 11: Validated Footer Connect Privacy Policy Link! </strong></font> <a href=".\ScreenShot\tc009_31.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:45 027 - Element is displayed:: [[RemoteWebDriver: chrome on XP (f45a3fddab9f4f34be8252b328b19a20)] -> css selector: div[class='nav-connect-footer'] ul li[class='partner'] div[class='connect-brand'] a[data-lid='Duopoly']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:46 143 - <b>2</b> - Validating Footer Connect Partner... - com.nbc.pages.HomePage.validateFooterConnectPartner(HomePage.java:820)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 12: Validated Footer Connect Partner Link! </strong></font> <a href=".\ScreenShot\tc009_32.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc009_33.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc006(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:08 474 - <b>9</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Watch live TVE dropdown appears[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:09 323 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:09 324 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:22 400 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:22 405 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:26 151 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:27 563 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:27 565 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:29 427 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:29 428 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:32 362 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:34 799 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class='nav-small-section nav-live-tv'] a]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:36 295 - <b>228172</b> - Hovered Watch Live TV Link.. - com.nbc.support.Log.assertThatForEvent(Log.java:852)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 2. Mouse Hover on Connect Link!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:38 260 - Element is displayed:: [[RemoteWebDriver: chrome on XP (662f18b55da94d63bd8a839259c22328)] -> css selector: li[class='nav-small-section nav-live-tv'] ul[class='nav-small-sub'] li[class='livetv']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:22:43 020 - <b>6</b> - Validating Connect Hover Panel... - com.nbc.pages.HomePage.validateWatchLiveTVHoverPanel(HomePage.java:528)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated Watch Live TV Hover Panel - Live TV , On Now, On Demand and Full Schedule! </strong></font> <a href=".\ScreenShot\tc006_15.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc006_16.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc011(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:57 880 - <b>9</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Article w/Advanced tagging (HTML Module).[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:58 712 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:58 712 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:20 248 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:20 248 - <b>2</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:24 626 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:26 178 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:26 178 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:27 664 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:27 664 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:30 439 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:50 668 - <b>20</b> - Navigated to Article with Advacne Tagging Page - com.nbc.pages.HomePage.navigateToArticleWithAdvacneTagging(HomePage.java:307)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:51 531 - Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:51 531 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:53 348 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 148 - Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 148 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 886 - Page URL:: https://www.nbcnewyork.com/news/local/ray-rice-appeal-hearing-janay-palmer-roger-goodell-atlantic-city-nfl-domestic-abuse-281594071.html</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:54 886 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:56 450 - Element is displayed:: [[RemoteWebDriver: chrome on XP (886631f7b0e9432481170813cd35fdf9)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 2. Navigated to Article with Advacne Tagging Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:59 337 - <b>2</b> - Validating HTML Module... - com.nbc.pages.ArticlePage.validateHTMLModule(ArticlePage.java:224)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 1: Validated HTML Module! </strong></font> <a href=".\ScreenShot\tc011_34.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:05 763 - <b>4</b> - Validating HTML Module - ToolBar... - com.nbc.pages.ArticlePage.validateHTMLModule_Toolbar(ArticlePage.java:254)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 2: Validated HTML Module Tool bar - Back Home, Zoom-In and Zoom-Out! </strong></font> <a href=".\ScreenShot\tc011_35.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:09 888 - <b>3</b> - Validating HTML Module - Time Navigation... - com.nbc.pages.ArticlePage.validateHTMLModule_TimeNavigation(ArticlePage.java:280)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 3: Validated HTML Module Time Nav - Time Nav Indicator and Time Nav Interval! </strong></font> <a href=".\ScreenShot\tc011_36.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:12 990 - <b>2</b> - Validating HTML Module... - com.nbc.pages.ArticlePage.validateHTMLModuleSlideContainer(ArticlePage.java:303)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Validation 4: Validated HTML Module Slide Container! </strong></font> <a href=".\ScreenShot\tc011_37.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> <a href=".\ScreenShot\tc011_38.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed.  </strong></font> </div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc010(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:49 532 - <b>7</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Share bar is visible and functions[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 332 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:23:50 333 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:03 433 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:03 433 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:07 164 - Element is displayed:: [[RemoteWebDriver: chrome on XP (e191cdde52184bc38766866849b435f5)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:08 821 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:08 822 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:10 169 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:10 171 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:12 423 - Element is displayed:: [[RemoteWebDriver: chrome on XP (e191cdde52184bc38766866849b435f5)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:13 593 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:13 593 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:14 580 - <b>2</b> - Clicked first article on Local Stack Section - com.nbc.pages.HomePage.clickOnFirstArticle_OnLocalStackSection(HomePage.java:286)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:15 497 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:24:15 513 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:33 032 - Unable to find a element after 51 sec ==> Proxy element for: AjaxElementLocator 'By.cssSelector: i[class='fa fa-facebook fa-stack-1x fa-inverse']'</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:34 255 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:34 255 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:35 342 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:25:35 343 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:26:52 866 - Unable to find a element after 51 sec ==> Proxy element for: AjaxElementLocator 'By.cssSelector: i[class='fa fa-facebook fa-stack-1x fa-inverse']'</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="red"><strong> Article Page did not open up. Site might be down. </strong></font> <a href=".\ScreenShot\tc010_39.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc002(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:55 133 - <b>10</b> - Driver::Get - com.nbc.support.WebDriverFactory.get(WebDriverFactory.java:365)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Top stories playback- with pre roll[sauceChrome_windows || NBC-NEWYORK ]</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:56 033 - Page URL:: data:,</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:18:56 033 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:12 536 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:12 536 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:17 987 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 072 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:21 088 - <b>3</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:22 588 - Page URL:: https://www.nbcnewyork.com/</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:22 588 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:25 214 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: li[class*='News'] a[lid*='News']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 1. Navigated to 'NBC-NewYork' Home Page!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:26 515 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: div[class='top-stories'] div[class='story'] div[class='headline'] a div[class='headline-tag']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:38 462 - <b>13</b> - Clicked first article with Video on Top Section - com.nbc.pages.HomePage.clickOnFirstArticleWithVideo_OnTopSection(HomePage.java:297)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:39 392 - Page URL:: https://www.nbcnewyork.com/news/local/best-indian-restaurant-america--480563611.html</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:39 394 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:41 339 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:42 515 - Page URL:: https://www.nbcnewyork.com/news/local/best-indian-restaurant-america--480563611.html</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:42 516 - <b>1</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:43 513 - Page URL:: https://www.nbcnewyork.com/news/local/best-indian-restaurant-america--480563611.html</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:43 515 - <b>0</b> - Page Load Wait: (Sync) - com.nbc.support.Utils.waitForPageLoad(Utils.java:71)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:45 451 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Step 2. Navigated to First Article with Video on Top Section!</div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 23 Apr 20:19:51 742 - Element is displayed:: [[RemoteWebDriver: chrome on XP (2266f6d04f1f4b4fa0f367ad05513c85)] -> css selector: i[class='fa fa-facebook fa-stack-1x fa-inverse']]</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="red"><strong> Timed out after 25 seconds. Unable to locate the element </strong></font> <a href=".\ScreenShot\tc002_6.png" target="_blank" >[ScreenShot]</a></div>&emsp;</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-NBC_PoC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-NBC_PoC" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nbc.testscripts.demo.NBC_Demo</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">179 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc001(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">9346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc002(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">10878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc001 status=SUCCESS method=NBC_Demo.tc001(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">86488 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">86490 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">86494 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc003(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">94924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc002 status=FAILURE method=NBC_Demo.tc002(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">96523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">96525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">96527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc004(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">104513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc004 status=SUCCESS method=NBC_Demo.tc004(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">139378 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">139384 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">139393 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc005(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">147256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc005 status=SUCCESS method=NBC_Demo.tc005(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">195311 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">195316 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">195322 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc006(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">204335 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc003 status=SUCCESS method=NBC_Demo.tc003(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">235267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">235271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">235278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc007(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">243049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc006 status=SUCCESS method=NBC_Demo.tc006(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">247246 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">247251 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">247257 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc008(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">255217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc007 status=SUCCESS method=NBC_Demo.tc007(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">285053 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">285053 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">285069 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc009(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">292497 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc008 status=SUCCESS method=NBC_Demo.tc008(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">297756 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">297756 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">297756 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc010(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">305439 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc009 status=SUCCESS method=NBC_Demo.tc009(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">364608 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">364608 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">364624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc011(, chrome_XP, http://www.nbcnewyork.com_NBC-NewYork)</span>
+                <span class="method-start">373794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc011 status=SUCCESS method=NBC_Demo.tc011(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">451237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">451237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc010 status=FAILURE method=NBC_Demo.tc010(java.lang.String, java.lang.String)[pri:...)</span>
+                <span class="method-start">497043 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(org.testng.TestRunner@1e9e725a)</span>
+                <span class="method-start">497043 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">497128 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

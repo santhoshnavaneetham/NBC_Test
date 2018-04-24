@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [NBC_PoC]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="webSite" value="http://www.nbcnewyork.com_NBC-NewYork"/>
+  <parameter name="deviceHost" value="localhost"/>
+  <parameter name="imageLoad" value="false"/>
+  <parameter name="har" value="false"/>
+  <parameter name="devicePort" value="4444"/>
+  <parameter name="browserName" value="sauceChrome_windows"/>
+  <parameter name="framesLoad" value="false"/>
+  <parameter name="documentLoad" value="true"/>
+  <test thread-count="2" parallel="methods" name="NBC_PoC_JAVA(failed)" verbose="0">
+    <classes>
+      <class name="com.nbc.testscripts.demo.NBC_Demo">
+        <methods>
+          <include name="tc007" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="tc002" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nbc.testscripts.demo.NBC_Demo -->
+    </classes>
+  </test> <!-- NBC_PoC_JAVA(failed) -->
+</suite> <!-- Failed suite [NBC_PoC] -->
