@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 import com.nbc.pages.ArticlePage;
 import com.nbc.pages.HomePage;
 import com.nbc.support.*;
-import com.relevantcodes.extentreports.ExtentTest;
 
 import net.lightbody.bmp.core.har.Har;
 
@@ -45,34 +44,33 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC001 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC001 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 			Log.assertThatExtentReport(homePage.validateLogo(), "Validation 1: Branding Logo available as expected!",
-					"Branding Logo not available on the page", extentedReport, driver);
+					"Branding Logo not available on the page", driver);
 
 			homePage.navigateToNewsPage();
-			Log.messageExtentReport("Step 2. Navigated to 'News' Page!", extentedReport);
+			Log.message("Step 2. Navigated to 'News' Page!");
 			Log.assertThatExtentReport(homePage.validateLogo(), "Validation 2: Branding Logo available as expected!",
-					"Branding Logo not available on the page", extentedReport, driver);
+					"Branding Logo not available on the page", driver);
 
 			homePage.clickOnLogo();
-			Log.messageExtentReport("Step 3. Clicked on Brand Logo!", extentedReport);
+			Log.message("Step 3. Clicked on Brand Logo!");
 			Log.assertThatExtentReport(homePage.validateHomePage(), "Validation 3: Navigated to Home Page as expected!",
-					"Failed to navigate to Home Page", extentedReport, driver);
+					"Failed to navigate to Home Page", driver);
 			Log.assertThatExtentReport(homePage.validateLogo(), "Validation 4: Branding Logo available as expected!",
-					"Branding Logo not available on the page", extentedReport, driver);
+					"Branding Logo not available on the page", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -100,30 +98,28 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC002 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC002 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			ArticlePage articlePage = homePage.clickOnFirstArticleWithVideo_OnTopSection();
-			Log.messageExtentReport("Step 2. Navigated to First Article with Video on Top Section!", extentedReport);
+			Log.message("Step 2. Navigated to First Article with Video on Top Section!");
 
 			Log.assertThatExtentReport(articlePage.validateArticleVideoPlayer(),
-					"Validation 1: Validated Article Video Player!", "Article Video Player failed to load",
-					extentedReport, driver);
+					"Validation 1: Validated Article Video Player!", "Article Video Player failed to load", driver);
 
 			// ** Yet to pre-roll validation. I couldn't see any pre-roll when i am
 			// developing. may be geographical condition.
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -151,33 +147,32 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC003 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC003 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			Log.assertThatExtentReport(homePage.validateWeatherForDays(),
 					"Validation 1: Validated weather details displayed for future three days!",
-					"Weather details not displayed for future three days", extentedReport, driver);
+					"Weather details not displayed for future three days", driver);
 			Log.assertThatExtentReport(homePage.validateWeatherModule(), "Validation 2: Validated Weather Module!",
-					"Weather Module failed to load", extentedReport, driver);
+					"Weather Module failed to load", driver);
 			// Log.assertThatExtentReport(homePage.validateWeatherAlertModule(),
 			// "Validation 3: Validated Weather Alert Module!", "Weather Alert Module failed
 			// to load",
-			// extentedReport, driver);
+			// driver);
 			Log.assertThatExtentReport(homePage.validateRadarOnWeatherModule(),
-					"Validation 4: Validated Radar in Weather Module!", "Failed to validate Radar", extentedReport,
+					"Validation 4: Validated Radar in Weather Module!", "Failed to validate Radar",
 					driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -205,24 +200,22 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC004 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
-
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC004 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
+		
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			Log.assertThatExtentReport(homePage.validateSpredfastModule(),
 					"Validation 1: Validated Spredfast Module. Module loaded on Right Rail as expected!",
-					"Spredfast Module failed to load", extentedReport, driver);
+					"Spredfast Module failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -250,24 +243,22 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC005 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC005 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			Log.assertThatExtentReport(homePage.validateSpredfastFeed(),
 					"Validation 1: Validated Feed in spredfast. All Feed loaded Seconds/Minutes/Hours Ago!",
-					"Feed in spredfast failed to load", extentedReport, driver);
+					"Feed in spredfast failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -295,27 +286,26 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC006 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC006 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			homePage.doMouseHoverOnWatchLiveTVLink();
-			Log.messageExtentReport("Step 2. Mouse Hover on Connect Link!", extentedReport);
+			Log.message("Step 2. Mouse Hover on Connect Link!");
 
 			Log.assertThatExtentReport(homePage.validateWatchLiveTVHoverPanel(),
 					"Validation 1: Validated Watch Live TV Hover Panel - Live TV , On Now, On Demand and Full Schedule!",
-					"Watch Live TV Hover Panel failed to load", extentedReport, driver);
+					"Watch Live TV Hover Panel failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -343,30 +333,29 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC007 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
-
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC007 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
+		
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			homePage.doMouseHoverOnWatchLiveTVLink();
-			Log.messageExtentReport("Step 2. Mouse Hover on Connect Link!", extentedReport);
+			Log.message("Step 2. Mouse Hover on Connect Link!");
 
 			homePage.navigateToFullScheduleOnLiveTV();
-			Log.messageExtentReport("Step 3. Navigated to Full Schedule On Live TV!", extentedReport);
+			Log.message("Step 3. Navigated to Full Schedule On Live TV!");
 
 			Log.assertThatExtentReport(homePage.validateTVListing(),
 					"Validation 1: Validated TV Listing - TV Listing Page, TV Tabs, Date Picker and Now TV!",
-					"TV Listing failed to load", extentedReport, driver);
+					"TV Listing failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -394,27 +383,26 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC008 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC008 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			homePage.doMouseHoverOnConnectLink();
-			Log.messageExtentReport("Step 2. Mouse Hover on Connect Link!", extentedReport);
+			Log.message("Step 2. Mouse Hover on Connect Link!");
 
 			Log.assertThatExtentReport(homePage.validateConnectHoverPanel(),
 					"Validation 1: Validated Connect Hover Panel - Media , Responds and Footer!",
-					"Connect Hover Panel failed to load", extentedReport, driver);
+					"Connect Hover Panel failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -442,59 +430,58 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC009 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
-
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC009 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
+		
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			homePage.doMouseHoverOnConnectLink();
-			Log.messageExtentReport("Step 2. Mouse Hover on Connect Link!", extentedReport);
+			Log.message("Step 2. Mouse Hover on Connect Link!");
 
 			Log.assertThatExtentReport(homePage.validateConnectTwitter(),
 					"Validation 1: Validated Connect Twitter Link!", "Connect Twitter Link failed to load",
-					extentedReport, driver);
+					driver);
 			Log.assertThatExtentReport(homePage.validateConnectInstagram(),
 					"Validation 2: Validated Connect Instagram Link!", "Connect Instagram Link failed to load",
-					extentedReport, driver);
+					driver);
 			Log.assertThatExtentReport(homePage.validateConnectFacebook(),
 					"Validation 3: Validated Connect Facebook Link!", "Connect Facebook Link failed to load",
-					extentedReport, driver);
+					driver);
 			Log.assertThatExtentReport(homePage.validateConnectApps(), "Validation 4: Validated Connect Apps Link!",
-					"Connect Apps Link failed to load", extentedReport, driver);
+					"Connect Apps Link failed to load", driver);
 			Log.assertThatExtentReport(homePage.validateConnectEmailNewsLetters(),
 					"Validation 5: Validated Connect Emails/NewsLetter Link!",
-					"Connect Emails/NewsLetter Link failed to load", extentedReport, driver);
+					"Connect Emails/NewsLetter Link failed to load", driver);
 			Log.assertThatExtentReport(homePage.validateConnectSendUsVideosandPictures(),
 					"Validation 6: Validated Connect Send Us Videos and Pictures Link!",
-					"Connect Send Us Videos and Pictures Link failed to load", extentedReport, driver);
+					"Connect Send Us Videos and Pictures Link failed to load", driver);
 			Log.assertThatExtentReport(homePage.validateConnectSendTips(),
 					"Validation 7: Validated Connect SendTips Link!", "Connect SendTips Link failed to load",
-					extentedReport, driver);
+					driver);
 			Log.assertThatExtentReport(homePage.validateFooterConnectSendTips(),
 					"Validation 8: Validated Footer Connect SendTips Link!",
-					"Footer Connect SendTips Link failed to load", extentedReport, driver);
+					"Footer Connect SendTips Link failed to load", driver);
 			Log.assertThatExtentReport(homePage.validateFooterConnectSendFeedback(),
 					"Validation 9: Validated Footer Connect Send Feedback Link!",
-					"Footer Connect Send Feedback Link failed to load", extentedReport, driver);
+					"Footer Connect Send Feedback Link failed to load", driver);
 			Log.assertThatExtentReport(homePage.validateFooterConnectTermsofService(),
 					"Validation 10: Validated Footer Connect Terms of Service Link!",
-					"Footer Connect Terms of Service Link failed to load", extentedReport, driver);
+					"Footer Connect Terms of Service Link failed to load", driver);
 			Log.assertThatExtentReport(homePage.validateFooterConnectPrivacyPolicy(),
 					"Validation 11: Validated Footer Connect Privacy Policy Link!",
-					"Footer Connect Privacy Policy Link failed to load", extentedReport, driver);
+					"Footer Connect Privacy Policy Link failed to load", driver);
 			Log.assertThatExtentReport(homePage.validateFooterConnectPartner(),
 					"Validation 12: Validated Footer Connect Partner Link!",
-					"Footer Connect Partner Link failed to load", extentedReport, driver);
+					"Footer Connect Partner Link failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -522,34 +509,33 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC010 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC010 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			ArticlePage articlePage = homePage.clickOnFirstArticle_OnLocalStackSection();
-			Log.messageExtentReport("Step 2. Navigated to First Article on Local Stack Section!", extentedReport);
+			Log.message("Step 2. Navigated to First Article on Local Stack Section!");
 
 			Log.assertThatExtentReport(articlePage.validateFacebookIcon(), "Validation 1: Validated Facebook Icon!",
-					"Facebook Icon failed to load", extentedReport, driver);
+					"Facebook Icon failed to load", driver);
 			Log.assertThatExtentReport(articlePage.validateTwitterIcon(), "Validation 2: Validated Twitter Icon!",
-					"Twitter Icon failed to load", extentedReport, driver);
+					"Twitter Icon failed to load", driver);
 			Log.assertThatExtentReport(articlePage.validateCommentsIcon(), "Validation 3: Validated Comments Icon!",
-					"Comments Icon failed to load", extentedReport, driver);
+					"Comments Icon failed to load", driver);
 			Log.assertThatExtentReport(articlePage.validateEmailIcon(), "Validation 4: Validated Email Icon!",
-					"Email Icon failed to load", extentedReport, driver);
+					"Email Icon failed to load", driver);
 			Log.assertThatExtentReport(articlePage.validatePrintIcon(), "Validation 5: Validated Print Icon!",
-					"Print Icon failed to load", extentedReport, driver);
+					"Print Icon failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
@@ -577,35 +563,34 @@ public class NBC_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo(
-				testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]",
-				"TC011 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems");
+		
+		Log.testCaseInfo(testData.get("Description") + "[" + browser + " || " + stakeHolderName.toUpperCase() + " ]", "TC011 - " + stakeHolderName.toUpperCase(), "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			ArticlePage articlePage = homePage.navigateToArticleWithAdvacneTagging();
-			Log.messageExtentReport("Step 2. Navigated to Article with Advacne Tagging Page!", extentedReport);
+			Log.message("Step 2. Navigated to Article with Advacne Tagging Page!");
 
 			Log.assertThatExtentReport(articlePage.validateHTMLModule(), "Validation 1: Validated HTML Module!",
-					"HTML Module failed to load", extentedReport, driver);
+					"HTML Module failed to load", driver);
 			Log.assertThatExtentReport(articlePage.validateHTMLModule_Toolbar(),
 					"Validation 2: Validated HTML Module Tool bar - Back Home, Zoom-In and Zoom-Out!",
-					"HTML Module Tool bar failed to load", extentedReport, driver);
+					"HTML Module Tool bar failed to load", driver);
 			Log.assertThatExtentReport(articlePage.validateHTMLModule_TimeNavigation(),
 					"Validation 3: Validated HTML Module Time Nav - Time Nav Indicator and Time Nav Interval!",
-					"HTML Module Time Nav failed to load", extentedReport, driver);
+					"HTML Module Time Nav failed to load", driver);
 			Log.assertThatExtentReport(articlePage.validateHTMLModuleSlideContainer(),
 					"Validation 4: Validated HTML Module Slide Container!",
-					"HTML Module Slide Container failed to load", extentedReport, driver);
+					"HTML Module Slide Container failed to load", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();

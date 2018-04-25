@@ -29,6 +29,7 @@ public class EmailReport extends EmailableReporter2 {
 
 	PrintWriter pWriter;
 	String fileName;
+	public static boolean isReportedAlready = false;
 
 	static String unescapePattern = "\\<div\\sclass=\"messages\">(.*)\\<\\/div\\>";
 	static String startTestTitle = "<div class=\"test-title\"> <strong><font size = \"3\" color = \"#000080\">";
@@ -40,326 +41,362 @@ public class EmailReport extends EmailableReporter2 {
 	@Override
 	public void generateReport(List <XmlSuite> xml, List <ISuite> suites, String outdir) {
 
-		super.generateReport(xml, suites, outdir);
-		File eScripts = new File("jsscripts.txt");
-		File eCSS = new File("ReportCSS.txt");
-
-		try {
-
-			File eReport = new File(outdir + File.separator + "TestAutomationResults.html");
-			File eReport1 = new File(outdir + File.separator + "emailable-report.html");
-
-			FileUtils.copyFile(eReport, eReport1);
-			String eContent = FileUtils.readFileToString(eReport, "UTF-8");
-
-			Pattern p = Pattern.compile(unescapePattern, Pattern.DOTALL);
-			Matcher matcher = p.matcher(eContent);
-			int matchCount = 0;
-
-			while (matcher.find()) {
-				matchCount++;
-			}
-
-			matcher = p.matcher(eContent);
-
-			for (int i = 0; i < matchCount; i++) {
-				matcher.find();
-				String unEscapePart = matcher.group(1);
-				unEscapePart = unEscapePart.replace("&lt;", "<"); // removing
-																	// the HTML
-																	// escaping
-																	// in the
-																	// email
-																	// report
-				unEscapePart = unEscapePart.replace("&gt;", ">"); // removing
-																	// the HTML
-																	// escaping
-																	// in the
-																	// email
-																	// report
-				unEscapePart = unEscapePart.replace("&quot;", "\"");
-				unEscapePart = unEscapePart.replace("&apos;", "'");
-				unEscapePart = unEscapePart.replace("&amp;", "&");
-				eContent = eContent.replace(matcher.group(1), unEscapePart);
-			}
-
-			long minStartTime = 0;
-			long maxEndTime = 0;
-			long temp = 0;
-
-			// Adding Test method - description to Summary Table (i.e)Test case
-			// title
-			for (SuiteResult suiteResult : super.suiteResults) {
-
-				String ignoreMethodeNameParameter = suites.get(suiteResults.indexOf(suiteResult)).getParameter("ignoreMethodeName");
-
-				if (ignoreMethodeNameParameter != null && ignoreMethodeNameParameter.contains("true")) {
-					ignoreMethodeName = true;
-				}
-
-				for (TestResult testResult : suiteResult.getTestResults()) {
-
-					for (ClassResult classResult : testResult.getFailedTestResults()) {
-
-						for (MethodResult methodResult : classResult.getMethodResults()) {
-
-							for (ITestResult tResult : methodResult.getResults()) {
-
-								temp = tResult.getStartMillis();
-
-								String exceptionReplacement = tResult.getThrowable().getMessage(); // Replace
-																									// stake
-																									// trace
-																									// with
-																									// original
-																									// unescape
-																									// them
-
-								if (!(tResult.getThrowable() instanceof java.lang.AssertionError) && exceptionReplacement != null && !exceptionReplacement.isEmpty()) {
-
-									if (exceptionReplacement.indexOf("(Session") > 0) {
-										exceptionReplacement = exceptionReplacement.substring(0, exceptionReplacement.indexOf("(Session") - 1).trim();
-									}
-
-									String exceptionToReplace = exceptionReplacement;
-									exceptionReplacement = exceptionReplacement.replace("&", "&amp;");
-									exceptionReplacement = exceptionReplacement.replace("<", "&lt;");
-									exceptionReplacement = exceptionReplacement.replace(">", "&gt;");
-									exceptionReplacement = exceptionReplacement.replace("\"", "&quot;");
-									exceptionReplacement = exceptionReplacement.replace("'", "&apos;");
-									eContent = eContent.replace(exceptionToReplace, exceptionReplacement);
-								}
-
-								if (minStartTime == 0 || temp < minStartTime) {
-									minStartTime = temp;
-								}
-
-								temp = tResult.getEndMillis();
-
-								if (maxEndTime == 0 || temp > maxEndTime) {
-									maxEndTime = temp;
-								}
-
-								if (!tResult.getMethod().isTest()) {
-									continue;
-								}
-
-								String methodDescription = getTestTitle(Reporter.getOutput(tResult).toString());
-								String methodName = tResult.getMethod().getMethodName();
-
-								if (methodDescription.isEmpty()) {
-									methodDescription = tResult.getMethod().getDescription();
-								}
-
-								String toReplace = "<a href=\"#m([0-9]{1,4})\">" + methodName + "</a>";
-
-								String toReplaceBy = "";
-
-								if (ignoreMethodeName) {
-									toReplaceBy = "<a href=\"#m$1\">" + methodDescription + "</a>";
-								}
-								else {
-									toReplaceBy = "<a href=\"#m$1\">" + methodName + ": " + methodDescription + "</a>";
-								}
-
-								eContent = eContent.replaceFirst(toReplace, toReplaceBy);
-
-							}
-
-						}
-
-					}
-
-					for (ClassResult classResult : testResult.getSkippedTestResults()) {
-
-						for (MethodResult methodResult : classResult.getMethodResults()) {
-
-							for (ITestResult tResult : methodResult.getResults()) {
-
-								temp = tResult.getStartMillis();
-
-								if (minStartTime == 0 || temp < minStartTime) {
-									minStartTime = temp;
-								}
-
-								temp = tResult.getEndMillis();
-
-								if (maxEndTime == 0 || temp > maxEndTime) {
-									maxEndTime = temp;
-								}
-
-								if (!tResult.getMethod().isTest()) {
-									continue;
-								}
-
-								String methodName = tResult.getMethod().getMethodName();
-								String methodDescription = getTestTitle(Reporter.getOutput(tResult).toString());
-
-								if (methodDescription.isEmpty()) {
-									methodDescription = tResult.getMethod().getDescription();
-								}
-
-								String toReplace = "<a href=\"#m([0-9]{1,4})\">" + methodName + "</a>";
-
-								String toReplaceBy = "";
-
-								if (ignoreMethodeName) {
-									toReplaceBy = "<a href=\"#m$1\">" + methodDescription + "</a>";
-								}
-								else {
-									toReplaceBy = "<a href=\"#m$1\">" + methodName + ": " + methodDescription + "</a>";
-								}
-
-								eContent = eContent.replaceFirst(toReplace, toReplaceBy);
-							}
-
-						}
-
-					}
-
-					for (ClassResult classResult : testResult.getPassedTestResults()) {
-
-						for (MethodResult methodResult : classResult.getMethodResults()) {
-
-							for (ITestResult tResult : methodResult.getResults()) {
-
-								temp = tResult.getStartMillis();
-
-								if (minStartTime == 0 || temp < minStartTime) {
-									minStartTime = temp;
-								}
-
-								temp = tResult.getEndMillis();
-
-								if (maxEndTime == 0 || temp > maxEndTime) {
-									maxEndTime = temp;
-								}
-
-								if (!tResult.getMethod().isTest()) {
-									continue;
-								}
-
-								String methodName = tResult.getMethod().getMethodName();
-								String methodDescription = getTestTitle(Reporter.getOutput(tResult).toString());
-
-								if (methodDescription.isEmpty()) {
-									methodDescription = tResult.getMethod().getDescription();
-								}
-
-								String toReplace = "<a href=\"#m([0-9]{1,4})\">" + methodName + "</a>";
-
-								String toReplaceBy = "";
-
-								if (ignoreMethodeName) {
-									toReplaceBy = "<a href=\"#m$1\">" + methodDescription + "</a>";
-								}
-								else {
-									toReplaceBy = "<a href=\"#m$1\">" + methodName + ": " + methodDescription + "</a>";
-								}
-
-								eContent = eContent.replaceFirst(toReplace, toReplaceBy);
-							}
-						}
-					}
-				}
-			}
-
-			eContent = eContent.replace("</head>", "\r</head>\r");
-			eContent = eContent.replace("<table", "\r\t<table");
-			eContent = eContent.replace("</table>", "\r\t</table>\r");
-			eContent = eContent.replaceFirst("<table>", "<table id='suitesummary' title=\"Filters results based on cell clicked/Shows all result on double-click\">");
-			eContent = eContent.replaceFirst("<table>", "<table id='summary'>");
-
-			eContent = eContent.replace("<thead>", "\r\t<thead>\r");
-			eContent = eContent.replace("</thead>", "\r\t</thead>\r");
-			eContent = eContent.replace("<tbody>", "\r\t<tbody>\r");
-			eContent = eContent.replace("</tbody>", "\r\t</tbody>\r");
-
-			eContent = eContent.replace("<h2", "\r\t\t<h2");
-			eContent = eContent.replace("<tr", "\r\t\t<tr");
-			eContent = eContent.replace("</tr>", "\r\t\t</tr>\r");
-			eContent = eContent.replace("<td>", "\r\t\t\t<td>");
-			eContent = eContent.replace("</td>", "\r\t\t\t</td>\r");
-			eContent = eContent.replace("<th", "\r\t\t\t<th");
-			eContent = eContent.replace("</th>", "\r\t\t\t</th>");
-			eContent = eContent.replace("<br/>", "");
-			eContent = eContent.replaceAll("<style(.*)</style>", "\r" + FileUtils.readFileToString(eCSS) + "\r");
-			eContent = eContent.replace("<head>", "<head>" + "\r" + FileUtils.readFileToString(eScripts) + "\r");
-			eContent = eContent.replace("<head>", "<head>" + "\r<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />\r");
-
-			if (!bets.isEmpty()) {
-				eContent = eContent.replace("</body>", "<br><b>Bets Placed:-</b><br>" + "<table><tr><th>UserName</th><th>Bet Ref#</th><th>Time</th></tr>" + bets.toString().replace(",", "\n") + "</table></body>");
-			}
-
-			eContent = eContent.replaceFirst("<table id='suitesummary' title=\"Filters results based on cell clicked/Shows all result on double-click\">", "<table id='suitesummary' title=\"Filters results based on cell clicked/Shows all result on double-click\" duration=\"" + (maxEndTime - minStartTime) + "\">");
-
-			FileUtils.writeStringToFile(eReport, eContent);
-
-		}
-		catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		try {
-
-			FileReader fr = null;
-			fr = new FileReader(outdir + File.separator + "TestAutomationResults.html");
-			BufferedReader br = new BufferedReader(fr);
-			StringBuilder content = new StringBuilder(10000);
-			String s;
-			int tableCount = 0;
-
-			String hub = "localhost";
+		String testNgReport = (xml.get(0).getParameter("testNgReport") != null) ? xml.get(0).getParameter("testNgReport") : "Yes";
+
+		if(testNgReport.equalsIgnoreCase("YES") && !isReportedAlready)
+		{
+			super.generateReport(xml, suites, outdir);
+			File eScripts = new File("jsscripts.txt");
+			File eCSS = new File("ReportCSS.txt");
 
 			try {
-				hub = (suites.get(0).getHost() == null) ? Inet4Address.getLocalHost().getHostName() : suites.get(0).getHost();
+
+				File eReport = new File(outdir + File.separator + "TestAutomationResults.html");
+				File eReport1 = new File(outdir + File.separator + "emailable-report.html");
+
+				FileUtils.copyFile(eReport, eReport1);
+				String eContent = FileUtils.readFileToString(eReport, "UTF-8");
+
+				Pattern p = Pattern.compile(unescapePattern, Pattern.DOTALL);
+				Matcher matcher = p.matcher(eContent);
+				int matchCount = 0;
+
+				while (matcher.find()) {
+					matchCount++;
+				}
+
+				matcher = p.matcher(eContent);
+
+				for (int i = 0; i < matchCount; i++) {
+					matcher.find();
+					String unEscapePart = matcher.group(1);
+					unEscapePart = unEscapePart.replace("&lt;", "<"); // removing
+					// the HTML
+					// escaping
+					// in the
+					// email
+					// report
+					unEscapePart = unEscapePart.replace("&gt;", ">"); // removing
+					// the HTML
+					// escaping
+					// in the
+					// email
+					// report
+					unEscapePart = unEscapePart.replace("&quot;", "\"");
+					unEscapePart = unEscapePart.replace("&apos;", "'");
+					unEscapePart = unEscapePart.replace("&amp;", "&");
+					eContent = eContent.replace(matcher.group(1), unEscapePart);
+				}
+
+				long minStartTime = 0;
+				long maxEndTime = 0;
+				long temp = 0;
+
+				// Adding Test method - description to Summary Table (i.e)Test case
+				// title
+				for (SuiteResult suiteResult : super.suiteResults) {
+
+					String ignoreMethodeNameParameter = suites.get(suiteResults.indexOf(suiteResult)).getParameter("ignoreMethodeName");
+
+					if (ignoreMethodeNameParameter != null && ignoreMethodeNameParameter.contains("true")) {
+						ignoreMethodeName = true;
+					}
+
+					for (TestResult testResult : suiteResult.getTestResults()) {
+
+						for (ClassResult classResult : testResult.getFailedTestResults()) {
+
+							for (MethodResult methodResult : classResult.getMethodResults()) {
+
+								for (ITestResult tResult : methodResult.getResults()) {
+
+									temp = tResult.getStartMillis();
+
+									String exceptionReplacement = tResult.getThrowable().getMessage(); // Replace
+									// stake
+									// trace
+									// with
+									// original
+									// unescape
+									// them
+
+									if (!(tResult.getThrowable() instanceof java.lang.AssertionError) && exceptionReplacement != null && !exceptionReplacement.isEmpty()) {
+
+										if (exceptionReplacement.indexOf("(Session") > 0) {
+											exceptionReplacement = exceptionReplacement.substring(0, exceptionReplacement.indexOf("(Session") - 1).trim();
+										}
+
+										String exceptionToReplace = exceptionReplacement;
+										exceptionReplacement = exceptionReplacement.replace("&", "&amp;");
+										exceptionReplacement = exceptionReplacement.replace("<", "&lt;");
+										exceptionReplacement = exceptionReplacement.replace(">", "&gt;");
+										exceptionReplacement = exceptionReplacement.replace("\"", "&quot;");
+										exceptionReplacement = exceptionReplacement.replace("'", "&apos;");
+										eContent = eContent.replace(exceptionToReplace, exceptionReplacement);
+									}
+
+									if (minStartTime == 0 || temp < minStartTime) {
+										minStartTime = temp;
+									}
+
+									temp = tResult.getEndMillis();
+
+									if (maxEndTime == 0 || temp > maxEndTime) {
+										maxEndTime = temp;
+									}
+
+									if (!tResult.getMethod().isTest()) {
+										continue;
+									}
+
+									String methodDescription = getTestTitle(Reporter.getOutput(tResult).toString());
+									String methodName = tResult.getMethod().getMethodName();
+
+									if (methodDescription.isEmpty()) {
+										methodDescription = tResult.getMethod().getDescription();
+									}
+
+									String toReplace = "<a href=\"#m([0-9]{1,4})\">" + methodName + "</a>";
+
+									String toReplaceBy = "";
+
+									if (ignoreMethodeName) {
+										toReplaceBy = "<a href=\"#m$1\">" + methodDescription + "</a>";
+									}
+									else {
+										toReplaceBy = "<a href=\"#m$1\">" + methodName + ": " + methodDescription + "</a>";
+									}
+
+									eContent = eContent.replaceFirst(toReplace, toReplaceBy);
+
+								}
+
+							}
+
+						}
+
+						for (ClassResult classResult : testResult.getSkippedTestResults()) {
+
+							for (MethodResult methodResult : classResult.getMethodResults()) {
+
+								for (ITestResult tResult : methodResult.getResults()) {
+
+									temp = tResult.getStartMillis();
+
+									if (minStartTime == 0 || temp < minStartTime) {
+										minStartTime = temp;
+									}
+
+									temp = tResult.getEndMillis();
+
+									if (maxEndTime == 0 || temp > maxEndTime) {
+										maxEndTime = temp;
+									}
+
+									if (!tResult.getMethod().isTest()) {
+										continue;
+									}
+
+									String methodName = tResult.getMethod().getMethodName();
+									String methodDescription = getTestTitle(Reporter.getOutput(tResult).toString());
+
+									if (methodDescription.isEmpty()) {
+										methodDescription = tResult.getMethod().getDescription();
+									}
+
+									String toReplace = "<a href=\"#m([0-9]{1,4})\">" + methodName + "</a>";
+
+									String toReplaceBy = "";
+
+									if (ignoreMethodeName) {
+										toReplaceBy = "<a href=\"#m$1\">" + methodDescription + "</a>";
+									}
+									else {
+										toReplaceBy = "<a href=\"#m$1\">" + methodName + ": " + methodDescription + "</a>";
+									}
+
+									eContent = eContent.replaceFirst(toReplace, toReplaceBy);
+								}
+
+							}
+
+						}
+
+						for (ClassResult classResult : testResult.getPassedTestResults()) {
+
+							for (MethodResult methodResult : classResult.getMethodResults()) {
+
+								for (ITestResult tResult : methodResult.getResults()) {
+
+									temp = tResult.getStartMillis();
+
+									if (minStartTime == 0 || temp < minStartTime) {
+										minStartTime = temp;
+									}
+
+									temp = tResult.getEndMillis();
+
+									if (maxEndTime == 0 || temp > maxEndTime) {
+										maxEndTime = temp;
+									}
+
+									if (!tResult.getMethod().isTest()) {
+										continue;
+									}
+
+									String methodName = tResult.getMethod().getMethodName();
+									String methodDescription = getTestTitle(Reporter.getOutput(tResult).toString());
+
+									if (methodDescription.isEmpty()) {
+										methodDescription = tResult.getMethod().getDescription();
+									}
+
+									String toReplace = "<a href=\"#m([0-9]{1,4})\">" + methodName + "</a>";
+
+									String toReplaceBy = "";
+
+									if (ignoreMethodeName) {
+										toReplaceBy = "<a href=\"#m$1\">" + methodDescription + "</a>";
+									}
+									else {
+										toReplaceBy = "<a href=\"#m$1\">" + methodName + ": " + methodDescription + "</a>";
+									}
+
+									eContent = eContent.replaceFirst(toReplace, toReplaceBy);
+								}
+							}
+						}
+					}
+				}
+
+				eContent = eContent.replace("</head>", "\r</head>\r");
+				eContent = eContent.replace("<table", "\r\t<table");
+				eContent = eContent.replace("</table>", "\r\t</table>\r");
+				eContent = eContent.replaceFirst("<table>", "<table id='suitesummary' title=\"Filters results based on cell clicked/Shows all result on double-click\">");
+				eContent = eContent.replaceFirst("<table>", "<table id='summary'>");
+
+				eContent = eContent.replace("<thead>", "\r\t<thead>\r");
+				eContent = eContent.replace("</thead>", "\r\t</thead>\r");
+				eContent = eContent.replace("<tbody>", "\r\t<tbody>\r");
+				eContent = eContent.replace("</tbody>", "\r\t</tbody>\r");
+
+				eContent = eContent.replace("<h2", "\r\t\t<h2");
+				eContent = eContent.replace("<tr", "\r\t\t<tr");
+				eContent = eContent.replace("</tr>", "\r\t\t</tr>\r");
+				eContent = eContent.replace("<td>", "\r\t\t\t<td>");
+				eContent = eContent.replace("</td>", "\r\t\t\t</td>\r");
+				eContent = eContent.replace("<th", "\r\t\t\t<th");
+				eContent = eContent.replace("</th>", "\r\t\t\t</th>");
+				eContent = eContent.replace("<br/>", "");
+				eContent = eContent.replaceAll("<style(.*)</style>", "\r" + FileUtils.readFileToString(eCSS) + "\r");
+				eContent = eContent.replace("<head>", "<head>" + "\r" + FileUtils.readFileToString(eScripts) + "\r");
+				eContent = eContent.replace("<head>", "<head>" + "\r<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />\r");
+
+				if (!bets.isEmpty()) {
+					eContent = eContent.replace("</body>", "<br><b>Bets Placed:-</b><br>" + "<table><tr><th>UserName</th><th>Bet Ref#</th><th>Time</th></tr>" + bets.toString().replace(",", "\n") + "</table></body>");
+				}
+
+				eContent = eContent.replaceFirst("<table id='suitesummary' title=\"Filters results based on cell clicked/Shows all result on double-click\">", "<table id='suitesummary' title=\"Filters results based on cell clicked/Shows all result on double-click\" duration=\"" + (maxEndTime - minStartTime) + "\">");
+
+				FileUtils.writeStringToFile(eReport, eContent);
+
 			}
-			catch (UnknownHostException e) {
+			catch (IOException e) {
 				e.printStackTrace();
 			}
 
-			while ((s = br.readLine()) != null) {
+			try {
 
-				content.append(s + "\n");
-				if (s.trim().contains("</table>")) {
-					tableCount++;
+				FileReader fr = null;
+				fr = new FileReader(outdir + File.separator + "TestAutomationResults.html");
+				BufferedReader br = new BufferedReader(fr);
+				StringBuilder content = new StringBuilder(10000);
+				String s;
+				int tableCount = 0;
+
+				String hub = "localhost";
+
+				try {
+					hub = (suites.get(0).getHost() == null) ? Inet4Address.getLocalHost().getHostName() : suites.get(0).getHost();
+				}
+				catch (UnknownHostException e) {
+					e.printStackTrace();
 				}
 
-				if (s.startsWith("<body")) {
+				while ((s = br.readLine()) != null) {
 
-					content.append("<p> Hi, </p>" + "\n" + "<p> Test automation scripts execution completed. Find the results summary below. </p>" + "\n" + "<p> <font color=\"blue\"><b>Note:</b> Please find the link to detailed results at the bottom of the email; Recommend to use <b>Chrome or Firefox </b> to view the results. </font></p>" + "\n" + "<p> <u><h3> Test Run Details: </h3> </u>" + "\r<table  bordercolor=\"#FFFFF\"> </u></h3> </p>\r" +
+					content.append(s + "\n");
+					if (s.trim().contains("</table>")) {
+						tableCount++;
+					}
+
+					if (s.startsWith("<body")) {
+
+						content.append("<p> Hi, </p>" + "\n" + "<p> Test automation scripts execution completed. Find the results summary below. </p>" + "\n" + "<p> <font color=\"blue\"><b>Note:</b> Please find the link to detailed results at the bottom of the email; Recommend to use <b>Chrome or Firefox </b> to view the results. </font></p>" + "\n" + "<p> <u><h3> Test Run Details: </h3> </u>" + "\r<table  bordercolor=\"#FFFFF\"> </u></h3> </p>\r" +
 
 					"\r<pre style=\"font-size: 1.2em;\">\r" + "   <b>Test Name</b> : " + System.getProperty("testname") + "\r" + "   <b>Suite Name</b>: " + System.getProperty("suiteFile") + "\r" + "   <b>Run Date</b>  : " + (new Date()).toString() + "\r" + "   <b>Test Name</b> : " + System.getProperty("name") + "\r" + "   <b>Run By</b>    : " + hub + "\r" + "</pre>" + "<br><br>\n");
+					}
+
+					if (tableCount == 1) {
+						content.append("<p><br></p><p> Thanks </p>\n</body>\n</html>");
+						break;
+					}
+
 				}
 
-				if (tableCount == 1) {
-					content.append("<p><br></p><p> Thanks </p>\n</body>\n</html>");
-					break;
-				}
+				String emailContent = content.toString();
+				File emailMsg = new File("." + "\\src\\test\\java\\AutomationTestResultsEmail.html".replace("\\", File.separator));
+				FileUtils.writeStringToFile(emailMsg, emailContent);
+
+				br.close();
+				fr.close();
+
+				// adding files/folders to be added on zip folder
+				List <String> filename = new ArrayList <String>();
+				filename.add(outdir + File.separator + "TestAutomationResults.html");
+				filename.add(outdir + File.separator +  "AutomationExtentReport.html");
+				filename.add(outdir + File.separator + "ScreenShot");
+				//	filename.add(outdir + File.separator + "Security Scan Report");
+				//	filename.add(outdir + File.separator + "Regression.html");
+
+				String ouputFile = outdir + File.separator + "AutomationTestSummaryReport.zip";
+				FolderZiper folderZiper = new FolderZiper();
+				folderZiper.zipFolder(filename, ouputFile);
 
 			}
-
-			String emailContent = content.toString();
-			File emailMsg = new File("." + "\\src\\test\\java\\AutomationTestResultsEmail.html".replace("\\", File.separator));
-			FileUtils.writeStringToFile(emailMsg, emailContent);
-
-			br.close();
-			fr.close();
-
-			// adding files/folders to be added on zip folder
-			List <String> filename = new ArrayList <String>();
-			filename.add(outdir + File.separator + "TestAutomationResults.html");
-			filename.add(outdir + File.separator + "ScreenShot");
-		//	filename.add(outdir + File.separator + "Security Scan Report");
-		//	filename.add(outdir + File.separator + "Regression.html");
-			
-			String ouputFile = outdir + File.separator + "AutomationTestSummaryReport.zip";
-			FolderZiper folderZiper = new FolderZiper();
-			folderZiper.zipFolder(filename, ouputFile);
-
+			catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
-		catch (Exception e) {
-			e.printStackTrace();
+		else
+		{
+			//Below code is to zip the automation extent report & screenshots folder to zip file. 
+			//This is a temp code till we have some solutions to generate normal html reports in a faster way.
+			try {
+
+				if(isReportedAlready){
+					System.out.println("generateReport has already been called once...");
+					return;
+				}
+
+				System.out.println("generateReport method...");
+
+				List <String> fileName = new ArrayList <String>();
+				//String UserDir= System.getProperty("user.dir");
+
+				fileName.add(outdir + File.separator + "AutomationExtentReport.html");
+				fileName.add(outdir + File.separator + "ScreenShot");
+				//fileName.add(outdir + File.separator + "emailable-report.html");
+
+				String ouputFile = outdir + File.separator + "AutomationTestSummaryReport.zip";
+				FolderZiper folderZiper = new FolderZiper();
+				folderZiper.zipFolder(fileName, ouputFile);
+
+				isReportedAlready = true;
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 
 	}

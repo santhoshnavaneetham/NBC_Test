@@ -255,7 +255,12 @@ public class HomePage extends LoadableComponent<HomePage> implements SpellCheckL
 		Utils.waitForPageLoad(driver);
 
 		if (isPageLoaded && !(Utils.waitForElement(driver, lnkNews))) {
-			Log.fail("Home Page did not open up. Site might be down.", driver);
+			try {
+				Log.fail("Home Page did not open up. Site might be down.", driver);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				//e.printStackTrace();
+			}
 		}
 
 	}// isLoaded
@@ -310,8 +315,9 @@ public class HomePage extends LoadableComponent<HomePage> implements SpellCheckL
 
 	/**
 	 * Navigate to News Page
+	 * @throws Exception 
 	 */
-	public void navigateToNewsPage() {
+	public void navigateToNewsPage() throws Exception {
 		final long startTime = StopWatch.startTime();
 		Utils.waitForPageLoad(driver);
 		lnkNews.click();
@@ -321,8 +327,9 @@ public class HomePage extends LoadableComponent<HomePage> implements SpellCheckL
 
 	/**
 	 * Navigate to Home Page
+	 * @throws Exception 
 	 */
-	public void clickOnLogo() {
+	public void clickOnLogo() throws Exception {
 		final long startTime = StopWatch.startTime();
 		Utils.waitForElement(driver, imgLogo);
 		imgLogo.click();
@@ -332,8 +339,9 @@ public class HomePage extends LoadableComponent<HomePage> implements SpellCheckL
 
 	/**
 	 * Hover over Connect Link
+	 * @throws Exception 
 	 */
-	public void doMouseHoverOnConnectLink() {
+	public void doMouseHoverOnConnectLink() throws Exception {
 		final long startTime = StopWatch.startTime();
 		Utils.waitForElement(driver, lnkConnect);
 
@@ -346,8 +354,9 @@ public class HomePage extends LoadableComponent<HomePage> implements SpellCheckL
 
 	/**
 	 * Hover over Watch Live TV Link
+	 * @throws Exception 
 	 */
-	public void doMouseHoverOnWatchLiveTVLink() {
+	public void doMouseHoverOnWatchLiveTVLink() throws Exception {
 		final long startTime = StopWatch.startTime();
 		Utils.waitForElement(driver, lnkWatchLiveTV);
 
@@ -361,8 +370,9 @@ public class HomePage extends LoadableComponent<HomePage> implements SpellCheckL
 
 	/**
 	 * Navigate to Full Schedule On Live TV
+	 * @throws Exception 
 	 */
-	public void navigateToFullScheduleOnLiveTV() {
+	public void navigateToFullScheduleOnLiveTV() throws Exception {
 		final long startTime = StopWatch.startTime();
 
 		Utils.waitForElement(driver, lnkWatchLiveTV);

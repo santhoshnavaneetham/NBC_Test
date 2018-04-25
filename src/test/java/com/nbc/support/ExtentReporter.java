@@ -47,7 +47,7 @@ public class ExtentReporter {
 	 */
 	private static String getTestName(ITestResult iTestResult) {
 		try{
-			String testClassName = iTestResult.getTestClass().getName().replace("MFClient.Tests.", "").replace(".", ":");
+			String testClassName = iTestResult.getTestClass().getName().replace("com.nbc.testscripts.demo.", "").replace(".", ":");
 			String testMethodName = iTestResult.getMethod().getMethodName().toString().trim();
 			return testClassName +" - "+ testMethodName;
 		}
@@ -107,14 +107,14 @@ public class ExtentReporter {
 
 			String reportFilePath = new File(iTestResult.getTestContext().getOutputDirectory()).getParent() + File.separator + "AutomationExtentReport.html";
 			XmlTest xmlParameters = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest();
-			String reportName = "M-Files VCurrent Automation Report - " + xmlParameters.getParameter("productVersion") + " - " + xmlParameters.getParameter("driverType").toUpperCase();
+			String reportName = "NBC Automation Report - " + xmlParameters.getParameter("browserName").toUpperCase();
 			String hostname = "Unknown";
 			String extentXMongoDBConnectionName = (xmlParameters.getParameter("extentXMongoDBConnectionName") != null) ? xmlParameters.getParameter("klovMongoDBConnectionName") : "";
-			String extentXProjectName = (xmlParameters.getParameter("extentXProjectName") != null) ? xmlParameters.getParameter("extentXProjectName") : "M-Files - VCurrent Automation";
+			String extentXProjectName = (xmlParameters.getParameter("extentXProjectName") != null) ? xmlParameters.getParameter("extentXProjectName") : "NBC Automation";
 			String extentXURL = (xmlParameters.getParameter("extentXURL") != null) ? xmlParameters.getParameter("extentXURL") : "";
 			String klovMongoDBConnectionName = (xmlParameters.getParameter("klovMongoDBConnectionName") != null) ? xmlParameters.getParameter("klovMongoDBConnectionName") : "";
 			int klovMongoDBConnectionPort = (xmlParameters.getParameter("klovMongoDBConnectionPort") != null) ? Integer.parseInt(xmlParameters.getParameter("klovMongoDBConnectionPort")) : 27017;
-			String klovProjectName = (xmlParameters.getParameter("klovProjectName") != null) ? xmlParameters.getParameter("klovProjectName") : "M-Files - VCurrent Automation";
+			String klovProjectName = (xmlParameters.getParameter("klovProjectName") != null) ? xmlParameters.getParameter("klovProjectName") : "NBC Automation";
 			String klovURL = (xmlParameters.getParameter("klovURL") != null) ? xmlParameters.getParameter("klovURL") : "";
 			KlovReporter klov = null;
 			ExtentXReporter extentX = null;
@@ -245,16 +245,38 @@ public class ExtentReporter {
 			if (iTestResult == null || !iTestResult.getMethod().isTest()) {
 				//test = new ExtentTest(testName, description);
 			} else {
+				test = getReportInstance(iTestResult).createTest(testName, description).assignAuthor("Aspire Systems").assignCategory("PoC_Demo");
+				tests.put(hashCode, test);				
+			}
+		}
+		return test;
+	}
 
-				XmlTest xmlParameters = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest();
-				String author = "M-Files";
 
-				if (xmlParameters.getParameter("driverType").equalsIgnoreCase("IE"))
-					author = "M-Files - " + xmlParameters.getParameter("productVersion").trim() + " - " + xmlParameters.getParameter("driverType").toUpperCase().trim() + xmlParameters.getParameter("driverVersion").trim();
-				else
-					author = "M-Files - " + xmlParameters.getParameter("productVersion").trim() + " - " + xmlParameters.getParameter("driverType").toUpperCase().trim();
-
-				test = getReportInstance(iTestResult).createTest(testName, description).assignAuthor(author).assignCategory(testName.split("-")[0].trim()+" - "+xmlParameters.getParameter("driverType").toUpperCase());
+	/**
+	 * To start and return a new extent test instance with given test case
+	 * description. Returns the test instance if the test has already been
+	 * started
+	 * 
+	 * @param description
+	 *            - test case description
+	 * @return {@link ExtentTest} - ExtentTest Instance
+	 */
+	private static ExtentTest startTest(String description, String testName) {
+		ExtentTest test = null;
+		ITestResult iTestResult = Reporter.getCurrentTestResult();
+		//String testName = iTestResult != null ? getTestName(iTestResult) : Thread.currentThread().getName();
+		Integer hashCode = iTestResult != null ? iTestResult.hashCode() : Thread.currentThread().hashCode();
+		if (tests.containsKey(hashCode)) {
+			test = tests.get(hashCode);
+			if (description != null && !description.isEmpty()) {
+				//test.setDescription(description);
+			}
+		} else {
+			if (iTestResult == null || !iTestResult.getMethod().isTest()) {
+				//test = new ExtentTest(testName, description);
+			} else {
+				test = getReportInstance(iTestResult).createTest(testName, description).assignAuthor("Aspire Systems").assignCategory("PoC_Demo");
 				tests.put(hashCode, test);				
 			}
 		}
@@ -278,6 +300,15 @@ public class ExtentReporter {
 	 */
 	public static void testCaseInfo(String testCaseInfo) {
 		startTest("<strong><font size = \"4\" color = \"#000080\">" + testCaseInfo + "</font></strong>");
+	}
+
+	/**
+	 * To start a test with given test case info
+	 * 
+	 * @param testCaseInfo
+	 */
+	public static void testCaseInfo(String testCaseInfo, String testName) {
+		startTest("<strong><font size = \"4\" color = \"#000080\">" + testCaseInfo + "</font></strong>", testName);
 	}
 
 	/**

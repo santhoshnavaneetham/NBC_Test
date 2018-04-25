@@ -11,12 +11,11 @@ import org.testng.annotations.Test;
 
 import com.nbc.pages.HomePage;
 import com.nbc.support.*;
-import com.relevantcodes.extentreports.ExtentTest;
 
 import net.lightbody.bmp.core.har.Har;
 
 @Listeners(EmailReport.class)
-public class NBC_CapturingPerformance_Demo extends BaseTest {
+public class NBC_CapturingPerformance_Demo /*extends BaseTest*/ {
 
 	String notes = null;
 	String testLinkResult = null;
@@ -44,33 +43,35 @@ public class NBC_CapturingPerformance_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo("Performance Capture - HAR", "TC002", "PoC_Demo",
+		/*ExtentTest extentedReport = Log.testCaseInfo("Performance Capture - HAR", "TC002", "PoC_Demo",
 				"Aspire Systems");
+		*/
+		Log.testCaseInfo("Performance Capture - HAR", "TC002", "PoC_Demo", "Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 			Log.assertThatExtentReport(homePage.validateLogo(), "Validation 1: Branding Logo available as expected!",
-					"Branding Logo not available on the page", extentedReport, driver);
+					"Branding Logo not available on the page", driver);
 
 			homePage.navigateToNewsPage();
-			Log.messageExtentReport("Step 2. Navigated to 'News' Page!", extentedReport);
+			Log.message("Step 2. Navigated to 'News' Page!");
 			Log.assertThatExtentReport(homePage.validateLogo(), "Validation 2: Branding Logo available as expected!",
-					"Branding Logo not available on the page", extentedReport, driver);
+					"Branding Logo not available on the page", driver);
 
 			homePage.clickOnLogo();
-			Log.messageExtentReport("Step 3. Clicked on Brand Logo!", extentedReport);
+			Log.message("Step 3. Clicked on Brand Logo!");
 			Log.assertThatExtentReport(homePage.validateHomePage(), "Validation 3: Navigated to Home Page as expected!",
-					"Failed to navigate to Home Page", extentedReport, driver);
+					"Failed to navigate to Home Page", driver);
 			Log.assertThatExtentReport(homePage.validateLogo(), "Validation 4: Branding Logo available as expected!",
-					"Branding Logo not available on the page", extentedReport, driver);
+					"Branding Logo not available on the page", driver);
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();

@@ -77,6 +77,7 @@ public class WebDriverFactory {
 	public static String includeframesLoad;
 	public static String includeimagesLoad;
 	public static String includeDocumentLoad;
+	final static String URL = "https://vasanthmanickam:94833836-2842-4a5c-af4f-3b920adf97b0@ondemand.saucelabs.com:443/wd/hub";
 
 	static {
 		try {
@@ -268,21 +269,42 @@ public class WebDriverFactory {
 
 				driver = new RemoteWebDriver(hubURL, chromeCapabilities);
 
-			} else if ("SauceChromeWithUserAgent".equalsIgnoreCase(browser)) {
+			} else if ("SauceChromeWithUserAgentiPad".equalsIgnoreCase(browser)) {
 				opt.addArguments(
 						"--user-agent=Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10");
-				// opt.addArguments("start-maximized");
 				chromeCapabilities.setCapability(ChromeOptions.CAPABILITY, opt);
 				chromeCapabilities.setCapability("opera.arguments", "-screenwidth 1024 -screenheight 768");
 				chromeCapabilities.setPlatform(Platform.fromString(platform));
-				final String URL = "https://vasanthmanickam:94833836-2842-4a5c-af4f-3b920adf97b0@ondemand.saucelabs.com:443/wd/hub";				
+				String methodName = new Exception().getStackTrace()[1].getMethodName();
+				chromeCapabilities.setCapability("name", methodName );
+				driver = new RemoteWebDriver(new URL(URL), chromeCapabilities);
+
+			} else if ("SauceChromeWithUserAgentPC".equalsIgnoreCase(browser)) {
+				chromeCapabilities.setCapability(ChromeOptions.CAPABILITY, opt);
+				chromeCapabilities.setCapability("platform", "Windows 10");
+				chromeCapabilities.setCapability("version", "64.0");
+				String methodName = new Exception().getStackTrace()[1].getMethodName();
+				chromeCapabilities.setCapability("name", methodName );
+				chromeCapabilities.setCapability("opera.arguments", "-screenwidth 2560 -screenheight 1600");
+
+				driver = new RemoteWebDriver(new URL(URL), chromeCapabilities);
+			} else if ("SauceChromeWithUserAgentPixel".equalsIgnoreCase(browser)) {
+				opt.addArguments(
+						"--user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel Build/OPR3.170623.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36");
+				chromeCapabilities.setCapability(ChromeOptions.CAPABILITY, opt);
+				chromeCapabilities.setCapability("opera.arguments", "-screenwidth 411 -screenheight 731");
+				chromeCapabilities.setPlatform(Platform.fromString(platform));
+				String methodName = new Exception().getStackTrace()[1].getMethodName();
+				chromeCapabilities.setCapability("name", methodName );
 				driver = new RemoteWebDriver(new URL(URL), chromeCapabilities);
 
 			} else if ("sauceChrome".equalsIgnoreCase(browser)) {
 				chromeCapabilities.setCapability(ChromeOptions.CAPABILITY, opt);
 				chromeCapabilities.setCapability("platform", "Windows 10");
-				chromeCapabilities.setCapability("version", "latest");
-				final String URL = "https://vasanthmanickam:94833836-2842-4a5c-af4f-3b920adf97b0@ondemand.saucelabs.com:443/wd/hub";
+				chromeCapabilities.setCapability("version", "64.0");
+				String methodName = new Exception().getStackTrace()[1].getMethodName();
+				chromeCapabilities.setCapability("name", methodName );
+
 				driver = new RemoteWebDriver(new URL(URL), chromeCapabilities);
 
 			} else if ("iexplorer".equalsIgnoreCase(browser)) {
@@ -297,8 +319,18 @@ public class WebDriverFactory {
 				firefoxCapabilities.setCapability("unexpectedAlertBehaviour", "ignore");
 				firefoxCapabilities.setPlatform(Platform.fromString(platform));
 				driver = new RemoteWebDriver(hubURL, firefoxCapabilities);
-			} else if ("safari".equalsIgnoreCase(browser)) {
-				driver = new RemoteWebDriver(hubURL, safariCapabilities);
+			} else if ("sauceFirefox".equalsIgnoreCase(browser)) {
+				firefoxCapabilities.setCapability("platform", "Windows 10");
+				firefoxCapabilities.setCapability("version", "58.0");
+				String methodName = new Exception().getStackTrace()[1].getMethodName();
+				chromeCapabilities.setCapability("name", methodName );
+				driver = new RemoteWebDriver(new URL(URL), firefoxCapabilities);
+			} else if ("sauceSafari".equalsIgnoreCase(browser)) {
+				safariCapabilities.setCapability("platform", "macOS 10.12");
+				safariCapabilities.setCapability("version", "11.0");
+				String methodName = new Exception().getStackTrace()[1].getMethodName();
+				chromeCapabilities.setCapability("name", methodName );
+				driver = new RemoteWebDriver(new URL(URL), safariCapabilities);
 
 			} else {
 				synchronized (WebDriverFactory.class) {
@@ -311,7 +343,8 @@ public class WebDriverFactory {
 			Assert.assertNotNull(driver,
 					"Driver did not intialize...\n Please check if hub is running / configuration settings are corect.");
 
-			if ((!"ANDROID".equalsIgnoreCase(platform)) && !("chromewithuseragent".equalsIgnoreCase(browser))) {
+			if ((!"ANDROID".equalsIgnoreCase(platform)) && !("chromewithuseragent".equalsIgnoreCase(browser))
+					&& !("SauceChromeWithUserAgentPixel".equalsIgnoreCase(browser))) {
 				driver.manage().window().maximize();
 			}
 		} catch (UnreachableBrowserException e) {
@@ -363,8 +396,8 @@ public class WebDriverFactory {
 
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 		Log.event("Driver::Get", StopWatch.elapsedTime(startTime));
-	/*	if (xmlRead)
-			Log.addTestRunMachineInfo(driver); */
+		/*if (xmlRead)
+			Log.addTestRunMachineInfo(driver);*/
 
 		if (System.getProperty("har") == "true") {
 			// enable more detailed HAR capture, if desired (see CaptureType for the

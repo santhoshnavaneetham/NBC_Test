@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 
 import com.nbc.pages.HomePage;
 import com.nbc.support.*;
-import com.relevantcodes.extentreports.ExtentTest;
 
 import net.lightbody.bmp.core.har.Har;
 
@@ -44,25 +43,24 @@ public class NBC_SpellChecker_BrokenLine_Demo extends BaseTest {
 
 		String site = webSiteWithStakeHolder.split("_")[0];
 		String stakeHolderName = webSiteWithStakeHolder.split("_")[1];
-		ExtentTest extentedReport = Log.testCaseInfo("Spelling and Broken Link Check", "TC001", "PoC_Demo",
-				"Aspire Systems");
+		Log.testCaseInfo("Spelling and Broken Link Check", "TC001", "PoC_Demo",
+				"Aspire Systems", driver);
 
 		try {
 
 			HomePage homePage = new HomePage(driver, site).get();
-			Log.messageExtentReport("Step 1. Navigated to '" + stakeHolderName + "' Home Page!", extentedReport);
+			Log.message("Step 1. Navigated to '" + stakeHolderName + "' Home Page!");
 
 			homePage.checkPageSpelling();
-			Log.messageExtentReport("Validation 1. Done Spell Check on the Home Page!", extentedReport);
+			Log.message("Validation 1. Done Spell Check on the Home Page!");
 
-			Log.messageExtentReport("Validation 2: Broken Links on Page --> " + homePage.checkBrokenLinks(),
-					extentedReport);
+			Log.message("Validation 2: Broken Links on Page --> " + homePage.checkBrokenLinks());
 
-			Log.testCaseResultExtentReport(extentedReport, driver);
+			Log.testCaseResultExtentReport(driver);
 
 		} // try
 		catch (Exception e) {
-			Log.exceptionExtentReport(e, driver, extentedReport);
+			Log.exception(e, driver);
 		} // catch
 		finally {
 			Log.endTestCase();
